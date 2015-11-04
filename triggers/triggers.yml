@@ -1,0 +1,163 @@
+---
+triggers:
+
+    # - trigger-1:
+    #     object_type: GBPPolicyAction
+    #     event_type: add
+    #     params:
+    #         policy_action:
+    #             name: sg-allow
+    #             description: Test action from triggers
+    #             action_type: allow
+    #             shared: False
+    #             tenant_id: f1221082289c42268b6552a294a7ddc9
+
+    # - trigger-2:
+    #     object_type: GBPPolicyClassifier
+    #     event_type: add
+    #     params:
+    #         policy_classifier:
+    #             name: sg-tcp-5005
+    #             description: Test classifier from triggers
+    #             protocol: tcp
+    #             port_range: 5005
+    #             direction: in
+    #             shared: False
+    #             tenant_id: f1221082289c42268b6552a294a7ddc9
+
+    # - trigger-3:
+    #     object_type: GBPPolicyClassifier
+    #     event_type: update
+    #     params:
+    #         name: sg-tcp-5005
+    #         policy_classifier:
+    #             direction: bi
+
+    # - trigger-4:
+    #     object_type: GBPPolicyRule
+    #     event_type: add
+    #     params:
+    #         policy_rule:  
+    #             name: allow-tcp-5005
+    #             description: Test rule from triggers
+    #             policy_classifier_id: sg-tcp-5005
+    #             policy_actions: sg-allow
+    #             shared: False
+    #             tenant_id: f1221082289c42268b6552a294a7ddc9
+
+
+    # - trigger-5:
+    #     object_type: GBPPolicyClassifier
+    #     event_type: add
+    #     params:
+    #         policy_classifier:
+    #             name: sg-tcp-8080
+    #             description: Test classifier from triggers
+    #             protocol: tcp
+    #             port_range: 8080
+    #             direction: in
+    #             shared: False
+    #             tenant_id: f1221082289c42268b6552a294a7ddc9
+
+    # - trigger-6:
+    #     object_type: GBPPolicyRule
+    #     event_type: add
+    #     params:
+    #         policy_rule:
+    #             name: allow-tcp-8080
+    #             description: Test rule from triggers
+    #             policy_classifier_id: sg-tcp-8080
+    #             policy_actions: sg-allow
+    #             shared: False
+    #             tenant_id: f1221082289c42268b6552a294a7ddc9
+
+
+    # - trigger-7:
+    #     object_type: GBPPolicyRuleSet
+    #     event_type: add
+    #     params:
+    #         policy_rule_set:
+    #             name: linux-tomcat
+    #             description: Test rule-set from triggers
+    #             policy_rules:
+    #             - allow-tcp-5005
+    #             tenant_id: f1221082289c42268b6552a294a7ddc9
+
+    # - trigger-8:
+    #     object_type: GBPPolicyRuleSet
+    #     event_type: update
+    #     params:
+    #         name: linux-tomcat
+    #         policy_rule_set:
+    #             name: linux-tomcat
+    #             description: Test rule-set from triggers
+    #             policy_rules: 
+    #             - allow-tcp-8080
+    #             - allow-tcp-5005
+
+    # - trigger-9:
+    #     object_type: GBPPolicyRuleSet
+    #     event_type: delete
+    #     params:
+    #         name: linux-tomcat
+
+    # - trigger-10:
+    #     object_type: GBPPolicyRule
+    #     event_type: delete
+    #     params:
+    #         name: allow-tcp-8080
+
+    # - trigger-11:
+    #     object_type: GBPPolicyRule
+    #     event_type: delete
+    #     params:
+    #         name: allow-tcp-5005
+
+    # - trigger-12:
+    #     object_type: GBPPolicyClassifier
+    #     event_type: delete
+    #     params:
+    #         name: sg-tcp-8080
+
+    # - trigger-13:
+    #     object_type: GBPPolicyClassifier
+    #     event_type: delete
+    #     params:
+    #         name: sg-tcp-5005
+
+    # - trigger-14:
+    #     object_type: GBPPolicyAction
+    #     event_type: delete
+    #     params:
+    #         name: sg-allow
+
+    # - trigger-15:
+    #     object_type: GBPL3Policy
+    #     event_type: add
+    #     params:
+    #         l3_policy:
+    #             name: sg-l3p1
+    #             description: Test l3_policy from triggers
+    #             ip_pool: 10.1.10.0/24
+    #             subnet_prefix_length: 26
+    #             external_segments: {}
+    #             tenant_id: f1221082289c42268b6552a294a7ddc9
+
+    - trigger-16:
+        object_type: GBPL3Policy
+        event_type: update
+        params:
+            name: sg-l3p1
+            l3_policy:
+                external_segments: {}
+
+    # - trigger-17:
+    #     object_type: GBPL3Policy
+    #     event_type: delete
+    #     params:
+    #         name: sg-l3p1
+
+
+
+
+

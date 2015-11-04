@@ -40,13 +40,21 @@ class GBPObject(object):
 
 
 class GBPPolicyAction(GBPObject):
+    """
+     
+        Possible params for Policy-Action
+        {
+        'name' : '<string>',
+        'description': '<string> Optional',
+        'action_type': '<string> allow | redirect | log | copy ',
+        'shared': '<boolen> True | False' Optional,
+        'tenant_id': '<uuid> Optional'
+        }
+
+    """
 
     def add(self, params):
-        data = {'name': params['name'],
-                'description': params['description'],
-                'action_type': params['action'],
-                'tenant_id': params['tenant_id']
-                }
+        data = params['policy_action']
         body = {'policy_action': data}
         gbpclient.create_policy_action(body)
 
@@ -70,24 +78,30 @@ class GBPPolicyAction(GBPObject):
 
 class GBPPolicyClassifier(GBPObject):
 
+    """
+     
+        Possible params for Policy-Classifier
+        {
+        'name' : '<string>',
+        'description': '<string> Optional',
+        'protocol': '<string> tcp | udp | icmp | http | https | smtp | dns | ftp | any',
+        'port_range': '<string> eg., 5000:6000 | 5000',
+        'direction': '<string> in | out | bi'
+        'shared': '<boolen> True | False' Optional,
+        'tenant_id': '<uuid> Optional'
+        }
+
+    """
+
     def add(self, params):
-        data = {'name': params['name'],
-                'protocol': params['protocol'],
-                'port_range': params['port_range'],
-                'direction': params['direction'],
-                'tenant_id': params['tenant_id']
-                }
+        data = params['policy_classifier']
         
         body = {'policy_classifier': data}
         gbpclient.create_policy_classifier(body)
 
     def update(self, params):
         classifier_id = self.list(params)['id']
-        data = {'name': params['name'],
-                'protocol': params['protocol'],
-                'port_range': params['port_range'],
-                'direction': params['direction']                 
-        }
+        data = params['policy_classifier']
         body = {'policy_classifier': data }
         gbpclient.update_policy_classifier(classifier_id, body)
 
@@ -111,21 +125,21 @@ class GBPPolicyRule(GBPObject):
 
     def add(self, params):
         
-        data = {'name': params['name'],
-                'description': params['description'],
-                'policy_classifier_id': self.policy_classifier.list({'name': params['policy_classifier']})['id'],
-                'policy_actions': [ self.policy_action.list({'name': params['policy_action']})['id']],
-                'tenant_id': params['tenant_id']
+        data = {'name': params['policy_rule']['name'],
+                'description': params['policy_rule']['description'],
+                'policy_classifier_id': self.policy_classifier.list({'name': params['policy_rule']['policy_classifier_id']})['id'],
+                'policy_actions': [ self.policy_action.list({'name': params['policy_rule']['policy_actions']})['id']],
+                'tenant_id': params['policy_rule']['tenant_id']
                 }
         body = {'policy_rule': data}
         gbpclient.create_policy_rule(body)
 
     def update(self, params):
         policy_rule_id = self.list(params)['id']
-        data = {'name': params['name'],
-                'description': params['description'],
-                'policy_classifier_id': self.policy_classifier.list({'name': params['policy_classifier']})['id'],
-                'policy_actions': [ self.policy_action.list({'name': params['policy_action']})['id']]
+        data = {'name': params['policy_rule']['name'],
+                'description': params['policy_rule']['description'],
+                'policy_classifier_id': self.policy_classifier.list({'name': params['policy_rule']['policy_classifier_id']})['id'],
+                'policy_actions': [ self.policy_action.list({'name': params['policy_rule']['policy_actions']})['id']]
         }
         body = {'policy_rule': data}
         gbpclient.update_policy_rule(policy_rule_id, body)
@@ -146,10 +160,10 @@ class GBPPolicyRuleSet(GBPObject):
     policy_rule = GBPPolicyRule()
     def add(self, params):
         
-        data = {'name': params['name'],
-                'description': params['description'],
-                'policy_rules': [ self.policy_rule.list({'name': rule})['id'] for rule in params['rule_list'] ],
-                'tenant_id': params['tenant_id']
+        data = {'name': params['policy_rule_set']['name'],
+                'description': params['policy_rule_set']['description'],
+                'policy_rules': [ self.policy_rule.list({'name': rule})['id'] for rule in params['policy_rule_set']['policy_rules'] ],
+                'tenant_id': params['policy_rule_set']['tenant_id']
         }
 
         body = {'policy_rule_set': data}
@@ -158,9 +172,9 @@ class GBPPolicyRuleSet(GBPObject):
 
     def update(self, params):
         policy_rule_set_id = self.list(params)['id']
-        data = {'name': params['name'],
-                'description': params['description'],
-                'policy_rules': [ self.policy_rule.list({'name': rule})['id'] for rule in params['rule_list'] ]
+        data = {'name': params['policy_rule_set']['name'],
+                'description': params['policy_rule_set']['description'],
+                'policy_rules': [ self.policy_rule.list({'name': rule})['id'] for rule in params['policy_rule_set']['policy_rules'] ]
         }
         body = {'policy_rule_set': data}
         gbpclient.update_policy_rule_set(policy_rule_set_id, body)
@@ -192,7 +206,7 @@ class GBPPolicyTargetGroup(GBPObject):
         pass
 
 
-class GBPL3Policy(GBPObject):
+class GBPL2Policy(GBPObject):
 
     def add(self, params):
         pass
@@ -206,5 +220,32 @@ class GBPL3Policy(GBPObject):
     def list(self, params):
         pass
 
-    
+class GBPL3Policy(GBPObject):
+
+    def add(self, params):
+        data = params['l3_policy']
+
+        body = {'l3_policy': data}
+        gbpclient.create_l3_policy(body)
+
+    def update(self, params):
+        l3_policy_id = self.list(params)['id']
+        data = params['l3_policy']
+        body = {'l3_policy': data}
+        gbpclient.update_l3_policy(l3_policy_id, body)
+
+    def delete(self, params):
+        l3_policy_id = self.list(params)['id']
+        gbpclient.delete_policy_l3_policy(l3_policy_id)
+
+    def list(self, params):
+        if params['name']:
+            for l3_policy in gbpclient.list_l3_policies()['l3_policies']:
+                if l3_policy['name'] == params['name']:
+                    return l3_policy
+        else:
+            return gbpclient.list_l3_policies()['l3_policies']
+
+
+
 
