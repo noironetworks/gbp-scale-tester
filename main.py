@@ -1,5 +1,7 @@
 import trigger as tgr
 import yaml
+import os
+import time
 
 def execute_trigger():
 
@@ -22,10 +24,15 @@ def execute_trigger():
         post_trigger_verify_traffic(trigger_id)
 
 def pre_trigger_verify_traffic(trigger_id):
-    pass     
+    os.system("python traffic_tester.py -f conf/config.ini -a start -t %s" %(trigger_id))
+    time.sleep(30)
+    os.system("python traffic_tester.py -f conf/config.ini -a stop -t %s" %(trigger_id))
+
 
 def post_trigger_verify_traffic(trigger_id):
-	pass
+    os.system("python traffic_tester.py -f conf/config.ini -a start -t %s" %(trigger_id))
+    time.sleep(30)
+    os.system("python traffic_tester.py -f conf/config.ini -a stop -t %s" %(trigger_id))
 
 
 def main():

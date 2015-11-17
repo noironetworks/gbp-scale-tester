@@ -5,6 +5,9 @@ from keystoneclient.v2_0 import client as ksc
 from neutronclient.neutron import client as nwc
 from gbpclient.v2_0 import client as gbpc
 
+###
+# This needs to be merged with libs/gbp_libs
+###
 
 class OSUtils(object):
 
@@ -156,7 +159,7 @@ class OSUtils(object):
         pt_ip_list = []
         pt_nic_list = []
         for pt in ptlist:
-            
+
             policy_target = self.gbpclient.show_policy_target(
                 pt)['policy_target']
             policy_target_port_id = policy_target['port_id']
@@ -167,21 +170,21 @@ class OSUtils(object):
             pt_nic_list.append(policy_target_nics)
 
         for nic_list in pt_nic_list:
-            
+
             for nic in nic_list:
-                
+
                 if self.config['traffic']['use_floating_ip'] == 'True':
 
                     floating_ip = self.get_floating_ip(
                         nic['ip_address'], floating_ip_map)
-                    
+
                     if floating_ip:
                         pt_ip_list.append(
                             self.get_floating_ip(nic['ip_address'], floating_ip_map))
                 else:
                     pt_ip_list.append({'fixed_ip': nic['ip_address']})
-                    
-        
+
+
 
         return pt_ip_list
 

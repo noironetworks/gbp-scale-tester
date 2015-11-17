@@ -1,16 +1,16 @@
 ---
 triggers:
 
-    # - trigger-1:
-    #     object_type: GBPPolicyAction
-    #     event_type: add
-    #     params:
-    #         policy_action:
-    #             name: sg-allow
-    #             description: Test action from triggers
-    #             action_type: allow
-    #             shared: False
-    #             tenant_id: f1221082289c42268b6552a294a7ddc9
+    - trigger-1:
+        object_type: GBPPolicyAction
+        event_type: add
+        params:
+            policy_action:
+                name: sg-allow
+                description: Test action from triggers
+                action_type: allow
+                shared: False
+                tenant_id: 198ad6db34df469592efaa604f4f23c6
 
     # - trigger-2:
     #     object_type: GBPPolicyClassifier
@@ -23,7 +23,7 @@ triggers:
     #             port_range: 5005
     #             direction: in
     #             shared: False
-    #             tenant_id: f1221082289c42268b6552a294a7ddc9
+    #             tenant_id: 198ad6db34df469592efaa604f4f23c6
 
     # - trigger-3:
     #     object_type: GBPPolicyClassifier
@@ -43,7 +43,7 @@ triggers:
     #             policy_classifier_id: sg-tcp-5005
     #             policy_actions: sg-allow
     #             shared: False
-    #             tenant_id: f1221082289c42268b6552a294a7ddc9
+    #             tenant_id: 198ad6db34df469592efaa604f4f23c6
 
 
     # - trigger-5:
@@ -57,7 +57,7 @@ triggers:
     #             port_range: 8080
     #             direction: in
     #             shared: False
-    #             tenant_id: f1221082289c42268b6552a294a7ddc9
+    #             tenant_id: 198ad6db34df469592efaa604f4f23c6
 
     # - trigger-6:
     #     object_type: GBPPolicyRule
@@ -69,7 +69,7 @@ triggers:
     #             policy_classifier_id: sg-tcp-8080
     #             policy_actions: sg-allow
     #             shared: False
-    #             tenant_id: f1221082289c42268b6552a294a7ddc9
+    #             tenant_id: 198ad6db34df469592efaa604f4f23c6
 
 
     # - trigger-7:
@@ -81,7 +81,7 @@ triggers:
     #             description: Test rule-set from triggers
     #             policy_rules:
     #             - allow-tcp-5005
-    #             tenant_id: f1221082289c42268b6552a294a7ddc9
+    #             tenant_id: 198ad6db34df469592efaa604f4f23c6
 
     # - trigger-8:
     #     object_type: GBPPolicyRuleSet
@@ -141,15 +141,15 @@ triggers:
     #             ip_pool: 10.1.10.0/24
     #             subnet_prefix_length: 26
     #             external_segments: {}
-    #             tenant_id: f1221082289c42268b6552a294a7ddc9
+    #             tenant_id: 198ad6db34df469592efaa604f4f23c6
 
-    - trigger-16:
-        object_type: GBPL3Policy
-        event_type: update
-        params:
-            name: sg-l3p1
-            l3_policy:
-                external_segments: {}
+    # - trigger-16:
+    #     object_type: GBPL3Policy
+    #     event_type: update
+    #     params:
+    #         name: sg-l3p1
+    #         l3_policy:
+    #             external_segments: {}
 
     # - trigger-17:
     #     object_type: GBPL3Policy

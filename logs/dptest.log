@@ -1,0 +1,1517 @@
+2015-11-17 13:50:42,712 - __main__ - INFO - Start the program
+2015-11-17 13:50:42,712 - __main__ - INFO - Initialize OSUtils
+2015-11-17 13:50:42,712 - __main__ - INFO - 
+
+Get tenant details
+
+
+2015-11-17 13:50:42,712 - libs.os_get_env - INFO - Get tenant list from Keystone
+2015-11-17 13:50:42,795 - libs.os_get_env - INFO - [<Tenant {u'enabled': True, u'description': u'admin tenant', u'name': u'admin', u'id': u'0653a3f46957480d999d754e7ea3cadc'}>, <Tenant {u'enabled': True, u'description': u'default tenant', u'name': u'demo', u'id': u'32ba63ad652140339a6c4e388188f52b'}>, <Tenant {u'enabled': True, u'description': u'Tenant for the openstack services', u'name': u'services', u'id': u'ef6a9a352a52417caee6fe9ec3d76e81'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-1', u'id': u'0adcf03335e24f7482306fb06e463373'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-19', u'id': u'09bb25794ce44364a2f618d9fce5f57d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-2', u'id': u'198ad6db34df469592efaa604f4f23c6'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-20', u'id': u'982a8d1247c34e0b85a46b73eb73a639'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-21', u'id': u'db27a726aca9430bab38cf5789c5f411'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-22', u'id': u'18a91c17cc064a07996f5702f6480765'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-23', u'id': u'2dd4b7b615654cc9b0e42cccb1c7882f'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-24', u'id': u'3482ba21bcee4e0792cd41052e771b94'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-25', u'id': u'b884bfce35f046f3a2fe69a4349625f0'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-3', u'id': u'75910da7f5794c09aee3a1f6c44e190d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-39', u'id': u'9ef10e1823f84bb5bf9c2099681168f9'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-4', u'id': u'c44db4aad74d43e2a399107467cfcf44'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-40', u'id': u'0eb096b84a934dbca6e38393307f17bd'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-41', u'id': u'99cd113467fb423094cdb0785a71e950'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-42', u'id': u'6960af21d2774244b8c7bcd04038bf6a'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-43', u'id': u'214fb8e8e1c44ccf88bcb863121f33bc'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-44', u'id': u'0670fabfabc24a78978d747a2715329d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-45', u'id': u'e6acceb19ce24011a343bbc6deec8b54'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-5', u'id': u'03f60c6551af41779ba941d5f594b5ad'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-59', u'id': u'd7f187167f53451b9c8d87b09882ec52'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-60', u'id': u'edf5499ac0584889bfb9f4a547b92ee7'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-61', u'id': u'dc8daaec964448a989592e5b064ec9cf'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-62', u'id': u'e4d51f8b84024cc5a59274d36bf3a67d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-63', u'id': u'ed7831fec5b048b295c9d2ad8e8c12f3'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-64', u'id': u'e533832daa9a4eaf8e5e94b1970a22d6'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-65', u'id': u'4faa47eb65bb4c81bcb8ae057785714a'}>]
+2015-11-17 13:50:42,795 - __main__ - INFO - {u'4faa47eb65bb4c81bcb8ae057785714a': u'trial-65'}
+2015-11-17 13:50:42,795 - __main__ - INFO - 
+
+Get policy-target-groups for all tenants
+
+
+2015-11-17 13:50:44,922 - __main__ - INFO - 
+
+Get policy-rule-sets for all tenants
+
+
+2015-11-17 13:50:47,705 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 13:50:47,706 - __main__ - INFO - {u'subnets': [u'129d489a-8700-4214-97a4-305567ff9df7'], u'description': u'', u'consumed_policy_rule_sets': [u'09c7ab3b-c6da-4d2e-aca2-96342f7c12c9', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'e03d195c-0168-4db7-8598-4018bb636738', u'tenant_id': u'4faa47eb65bb4c81bcb8ae057785714a', u'service_management': False, u'provided_policy_rule_sets': [u'09c7ab3b-c6da-4d2e-aca2-96342f7c12c9', u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'44179933-d2cd-49f1-bd1a-a26d7978e1b1', u'e4bfd95d-5527-4483-8fb6-a16022171110', u'e6767210-33bb-40f0-87b2-be3f1928c70f'], u'shared': False, u'l2_policy_id': u'2df6a53c-de49-4eb0-a331-7ba2568ddbab', u'id': u'0d38cd01-a40b-47bd-92ad-3dcb70ca6f54', u'name': u'ptg_0_L2_0_L3_0_trial-65'}
+2015-11-17 13:50:47,857 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 13:50:47,857 - __main__ - INFO - {u'subnets': [u'20b289b9-eecc-4764-974c-a78343b78de8'], u'description': u'', u'consumed_policy_rule_sets': [u'09c7ab3b-c6da-4d2e-aca2-96342f7c12c9', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'e03d195c-0168-4db7-8598-4018bb636738', u'tenant_id': u'4faa47eb65bb4c81bcb8ae057785714a', u'service_management': False, u'provided_policy_rule_sets': [u'09c7ab3b-c6da-4d2e-aca2-96342f7c12c9', u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'6857a255-7510-4419-90e1-8fde949c31a7', u'86af4204-dce4-4dd0-a27a-1fbc4fc03585'], u'shared': False, u'l2_policy_id': u'483a84cf-845d-4e9e-8251-2bb070fd3eee', u'id': u'2bbc80e9-9025-4e75-ac1a-279e42c11ffe', u'name': u'ptg_3_L2_3_L3_0_trial-65'}
+2015-11-17 13:50:48,103 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 13:50:48,103 - __main__ - INFO - {u'subnets': [u'69e56dac-05c3-4ea1-a586-083af050e09d'], u'description': u'', u'consumed_policy_rule_sets': [u'09c7ab3b-c6da-4d2e-aca2-96342f7c12c9', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'e03d195c-0168-4db7-8598-4018bb636738', u'tenant_id': u'4faa47eb65bb4c81bcb8ae057785714a', u'service_management': False, u'provided_policy_rule_sets': [u'09c7ab3b-c6da-4d2e-aca2-96342f7c12c9', u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'04d31602-9f3f-4ba0-ac4e-a3d3aefb227c', u'89e88ad3-4c70-44ed-a766-d85f1335e02d'], u'shared': False, u'l2_policy_id': u'36f93919-3579-4bc8-9fb3-c0333a1c10a8', u'id': u'4e3b83bf-c43f-4509-a3b6-3626188972d3', u'name': u'ptg_2_L2_2_L3_0_trial-65'}
+2015-11-17 13:50:48,347 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 13:50:48,348 - __main__ - INFO - {u'subnets': [u'9bc129e8-2516-4519-9b25-c6bfc16efb67'], u'description': u'', u'consumed_policy_rule_sets': [u'09c7ab3b-c6da-4d2e-aca2-96342f7c12c9', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'e03d195c-0168-4db7-8598-4018bb636738', u'tenant_id': u'4faa47eb65bb4c81bcb8ae057785714a', u'service_management': False, u'provided_policy_rule_sets': [u'09c7ab3b-c6da-4d2e-aca2-96342f7c12c9', u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'285626f2-afc3-4897-b7b3-950a948daf53', u'bbe5c211-806c-46d0-8144-865a9cc8737c', u'c97ffdc6-cede-43ed-9ae8-d50e31a05a52'], u'shared': False, u'l2_policy_id': u'3820eacc-cdef-4141-88e7-218deaadd7b7', u'id': u'f5739935-8593-461f-ae08-06846584f54c', u'name': u'ptg_1_L2_1_L3_0_trial-65'}
+2015-11-17 13:50:48,570 - __main__ - INFO - **************************************************
+2015-11-17 13:50:48,570 - __main__ - INFO - dest_tenant: trial-65
+2015-11-17 13:50:48,570 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 13:50:48,570 - __main__ - INFO - dest_grp: ptg_0_L2_0_L3_0_trial-65
+2015-11-17 13:50:48,571 - __main__ - INFO - src_grp: ptg_0_L2_0_L3_0_trial-65
+2015-11-17 13:50:48,571 - __main__ - INFO - src_eps: [u'4.201.1.69', u'4.201.1.67', u'4.201.1.60']
+2015-11-17 13:50:48,571 - __main__ - INFO - src_tenant: trial-65
+2015-11-17 13:50:48,571 - __main__ - INFO - dest_eps: [u'2.65.1.7', u'2.65.1.6', u'2.65.1.5']
+2015-11-17 13:50:48,571 - __main__ - INFO - 
+2015-11-17 13:50:48,572 - __main__ - INFO - **************************************************
+2015-11-17 13:50:48,572 - __main__ - INFO - dest_tenant: trial-65
+2015-11-17 13:50:48,572 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 13:50:48,572 - __main__ - INFO - dest_grp: ptg_3_L2_3_L3_0_trial-65
+2015-11-17 13:50:48,573 - __main__ - INFO - src_grp: ptg_3_L2_3_L3_0_trial-65
+2015-11-17 13:50:48,573 - __main__ - INFO - src_eps: [u'4.201.1.62', u'4.201.1.68']
+2015-11-17 13:50:48,573 - __main__ - INFO - src_tenant: trial-65
+2015-11-17 13:50:48,573 - __main__ - INFO - dest_eps: [u'2.65.3.5', u'2.65.3.6']
+2015-11-17 13:50:48,573 - __main__ - INFO - 
+2015-11-17 13:50:48,573 - __main__ - INFO - **************************************************
+2015-11-17 13:50:48,573 - __main__ - INFO - dest_tenant: trial-65
+2015-11-17 13:50:48,573 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 13:50:48,574 - __main__ - INFO - dest_grp: ptg_2_L2_2_L3_0_trial-65
+2015-11-17 13:50:48,574 - __main__ - INFO - src_grp: ptg_2_L2_2_L3_0_trial-65
+2015-11-17 13:50:48,574 - __main__ - INFO - src_eps: [u'4.201.1.61', u'4.201.1.64']
+2015-11-17 13:50:48,574 - __main__ - INFO - src_tenant: trial-65
+2015-11-17 13:50:48,574 - __main__ - INFO - dest_eps: [u'2.65.2.5', u'2.65.2.6']
+2015-11-17 13:50:48,574 - __main__ - INFO - 
+2015-11-17 13:50:48,574 - __main__ - INFO - **************************************************
+2015-11-17 13:50:48,574 - __main__ - INFO - dest_tenant: trial-65
+2015-11-17 13:50:48,575 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 13:50:48,575 - __main__ - INFO - dest_grp: ptg_1_L2_1_L3_0_trial-65
+2015-11-17 13:50:48,575 - __main__ - INFO - src_grp: ptg_1_L2_1_L3_0_trial-65
+2015-11-17 13:50:48,575 - __main__ - INFO - src_eps: [u'4.201.1.63', u'4.201.1.65', u'4.201.1.66']
+2015-11-17 13:50:48,575 - __main__ - INFO - src_tenant: trial-65
+2015-11-17 13:50:48,575 - __main__ - INFO - dest_eps: [u'2.65.0.5', u'2.65.0.6', u'2.65.0.7']
+2015-11-17 13:50:48,575 - __main__ - INFO - 
+2015-11-17 13:50:48,647 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:50:48,657 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:50:48,657 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:50:48,943 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:50:48,943 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:50:48,949 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:50:50,502 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:50:50,511 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:50:50,518 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:50:50,753 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:50:50,755 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:50:50,758 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:50:50,928 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:50:50,942 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:50:50,951 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:50:52,774 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:50:52,774 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:50:52,781 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:50:52,991 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:50:52,991 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:50:53,158 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:50:53,158 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:50:55,931 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:50:55,940 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:50:56,160 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:50:56,162 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:50:56,334 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:50:56,334 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:50:58,197 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:50:58,197 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:50:58,407 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:50:58,407 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:50:58,578 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:50:58,582 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:51:00,841 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:51:00,842 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:51:01,074 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:51:01,074 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:51:01,245 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:51:01,247 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:51:03,124 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:51:03,124 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:51:03,346 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:51:03,357 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:51:03,361 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:51:03,527 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:51:03,543 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:51:03,547 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:51:05,345 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:51:05,352 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:51:05,357 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:51:05,585 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:51:05,588 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:51:05,596 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:51:05,756 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:51:05,763 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:51:05,783 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:51:07,651 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:51:07,652 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:51:07,674 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:51:14,221 - __main__ - INFO - Start the program
+2015-11-17 13:51:14,222 - __main__ - INFO - Initialize OSUtils
+2015-11-17 13:51:14,222 - __main__ - INFO - 
+
+Get tenant details
+
+
+2015-11-17 13:51:14,222 - libs.os_get_env - INFO - Get tenant list from Keystone
+2015-11-17 13:51:14,279 - libs.os_get_env - INFO - [<Tenant {u'enabled': True, u'description': u'admin tenant', u'name': u'admin', u'id': u'0653a3f46957480d999d754e7ea3cadc'}>, <Tenant {u'enabled': True, u'description': u'default tenant', u'name': u'demo', u'id': u'32ba63ad652140339a6c4e388188f52b'}>, <Tenant {u'enabled': True, u'description': u'Tenant for the openstack services', u'name': u'services', u'id': u'ef6a9a352a52417caee6fe9ec3d76e81'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-1', u'id': u'0adcf03335e24f7482306fb06e463373'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-19', u'id': u'09bb25794ce44364a2f618d9fce5f57d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-2', u'id': u'198ad6db34df469592efaa604f4f23c6'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-20', u'id': u'982a8d1247c34e0b85a46b73eb73a639'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-21', u'id': u'db27a726aca9430bab38cf5789c5f411'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-22', u'id': u'18a91c17cc064a07996f5702f6480765'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-23', u'id': u'2dd4b7b615654cc9b0e42cccb1c7882f'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-24', u'id': u'3482ba21bcee4e0792cd41052e771b94'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-25', u'id': u'b884bfce35f046f3a2fe69a4349625f0'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-3', u'id': u'75910da7f5794c09aee3a1f6c44e190d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-39', u'id': u'9ef10e1823f84bb5bf9c2099681168f9'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-4', u'id': u'c44db4aad74d43e2a399107467cfcf44'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-40', u'id': u'0eb096b84a934dbca6e38393307f17bd'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-41', u'id': u'99cd113467fb423094cdb0785a71e950'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-42', u'id': u'6960af21d2774244b8c7bcd04038bf6a'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-43', u'id': u'214fb8e8e1c44ccf88bcb863121f33bc'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-44', u'id': u'0670fabfabc24a78978d747a2715329d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-45', u'id': u'e6acceb19ce24011a343bbc6deec8b54'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-5', u'id': u'03f60c6551af41779ba941d5f594b5ad'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-59', u'id': u'd7f187167f53451b9c8d87b09882ec52'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-60', u'id': u'edf5499ac0584889bfb9f4a547b92ee7'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-61', u'id': u'dc8daaec964448a989592e5b064ec9cf'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-62', u'id': u'e4d51f8b84024cc5a59274d36bf3a67d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-63', u'id': u'ed7831fec5b048b295c9d2ad8e8c12f3'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-64', u'id': u'e533832daa9a4eaf8e5e94b1970a22d6'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-65', u'id': u'4faa47eb65bb4c81bcb8ae057785714a'}>]
+2015-11-17 13:51:14,280 - __main__ - INFO - {u'4faa47eb65bb4c81bcb8ae057785714a': u'trial-65'}
+2015-11-17 13:51:14,280 - __main__ - INFO - 
+
+Get policy-target-groups for all tenants
+
+
+2015-11-17 13:51:15,743 - __main__ - INFO - 
+
+Get policy-rule-sets for all tenants
+
+
+2015-11-17 13:51:18,515 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 13:51:18,515 - __main__ - INFO - {u'subnets': [u'129d489a-8700-4214-97a4-305567ff9df7'], u'description': u'', u'consumed_policy_rule_sets': [u'09c7ab3b-c6da-4d2e-aca2-96342f7c12c9', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'e03d195c-0168-4db7-8598-4018bb636738', u'tenant_id': u'4faa47eb65bb4c81bcb8ae057785714a', u'service_management': False, u'provided_policy_rule_sets': [u'09c7ab3b-c6da-4d2e-aca2-96342f7c12c9', u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'44179933-d2cd-49f1-bd1a-a26d7978e1b1', u'e4bfd95d-5527-4483-8fb6-a16022171110', u'e6767210-33bb-40f0-87b2-be3f1928c70f'], u'shared': False, u'l2_policy_id': u'2df6a53c-de49-4eb0-a331-7ba2568ddbab', u'id': u'0d38cd01-a40b-47bd-92ad-3dcb70ca6f54', u'name': u'ptg_0_L2_0_L3_0_trial-65'}
+2015-11-17 13:51:18,965 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 13:51:18,965 - __main__ - INFO - {u'subnets': [u'20b289b9-eecc-4764-974c-a78343b78de8'], u'description': u'', u'consumed_policy_rule_sets': [u'09c7ab3b-c6da-4d2e-aca2-96342f7c12c9', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'e03d195c-0168-4db7-8598-4018bb636738', u'tenant_id': u'4faa47eb65bb4c81bcb8ae057785714a', u'service_management': False, u'provided_policy_rule_sets': [u'09c7ab3b-c6da-4d2e-aca2-96342f7c12c9', u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'6857a255-7510-4419-90e1-8fde949c31a7', u'86af4204-dce4-4dd0-a27a-1fbc4fc03585'], u'shared': False, u'l2_policy_id': u'483a84cf-845d-4e9e-8251-2bb070fd3eee', u'id': u'2bbc80e9-9025-4e75-ac1a-279e42c11ffe', u'name': u'ptg_3_L2_3_L3_0_trial-65'}
+2015-11-17 13:51:19,067 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 13:51:19,068 - __main__ - INFO - {u'subnets': [u'69e56dac-05c3-4ea1-a586-083af050e09d'], u'description': u'', u'consumed_policy_rule_sets': [u'09c7ab3b-c6da-4d2e-aca2-96342f7c12c9', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'e03d195c-0168-4db7-8598-4018bb636738', u'tenant_id': u'4faa47eb65bb4c81bcb8ae057785714a', u'service_management': False, u'provided_policy_rule_sets': [u'09c7ab3b-c6da-4d2e-aca2-96342f7c12c9', u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'04d31602-9f3f-4ba0-ac4e-a3d3aefb227c', u'89e88ad3-4c70-44ed-a766-d85f1335e02d'], u'shared': False, u'l2_policy_id': u'36f93919-3579-4bc8-9fb3-c0333a1c10a8', u'id': u'4e3b83bf-c43f-4509-a3b6-3626188972d3', u'name': u'ptg_2_L2_2_L3_0_trial-65'}
+2015-11-17 13:51:19,162 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 13:51:19,162 - __main__ - INFO - {u'subnets': [u'9bc129e8-2516-4519-9b25-c6bfc16efb67'], u'description': u'', u'consumed_policy_rule_sets': [u'09c7ab3b-c6da-4d2e-aca2-96342f7c12c9', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'e03d195c-0168-4db7-8598-4018bb636738', u'tenant_id': u'4faa47eb65bb4c81bcb8ae057785714a', u'service_management': False, u'provided_policy_rule_sets': [u'09c7ab3b-c6da-4d2e-aca2-96342f7c12c9', u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'285626f2-afc3-4897-b7b3-950a948daf53', u'bbe5c211-806c-46d0-8144-865a9cc8737c', u'c97ffdc6-cede-43ed-9ae8-d50e31a05a52'], u'shared': False, u'l2_policy_id': u'3820eacc-cdef-4141-88e7-218deaadd7b7', u'id': u'f5739935-8593-461f-ae08-06846584f54c', u'name': u'ptg_1_L2_1_L3_0_trial-65'}
+2015-11-17 13:51:19,306 - __main__ - INFO - **************************************************
+2015-11-17 13:51:19,306 - __main__ - INFO - dest_tenant: trial-65
+2015-11-17 13:51:19,306 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 13:51:19,307 - __main__ - INFO - dest_grp: ptg_0_L2_0_L3_0_trial-65
+2015-11-17 13:51:19,307 - __main__ - INFO - src_grp: ptg_0_L2_0_L3_0_trial-65
+2015-11-17 13:51:19,307 - __main__ - INFO - src_eps: [u'4.201.1.69', u'4.201.1.67', u'4.201.1.60']
+2015-11-17 13:51:19,307 - __main__ - INFO - src_tenant: trial-65
+2015-11-17 13:51:19,307 - __main__ - INFO - dest_eps: [u'2.65.1.7', u'2.65.1.6', u'2.65.1.5']
+2015-11-17 13:51:19,308 - __main__ - INFO - 
+2015-11-17 13:51:19,308 - __main__ - INFO - **************************************************
+2015-11-17 13:51:19,308 - __main__ - INFO - dest_tenant: trial-65
+2015-11-17 13:51:19,308 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 13:51:19,308 - __main__ - INFO - dest_grp: ptg_3_L2_3_L3_0_trial-65
+2015-11-17 13:51:19,308 - __main__ - INFO - src_grp: ptg_3_L2_3_L3_0_trial-65
+2015-11-17 13:51:19,309 - __main__ - INFO - src_eps: [u'4.201.1.62', u'4.201.1.68']
+2015-11-17 13:51:19,309 - __main__ - INFO - src_tenant: trial-65
+2015-11-17 13:51:19,309 - __main__ - INFO - dest_eps: [u'2.65.3.5', u'2.65.3.6']
+2015-11-17 13:51:19,309 - __main__ - INFO - 
+2015-11-17 13:51:19,309 - __main__ - INFO - **************************************************
+2015-11-17 13:51:19,309 - __main__ - INFO - dest_tenant: trial-65
+2015-11-17 13:51:19,309 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 13:51:19,310 - __main__ - INFO - dest_grp: ptg_2_L2_2_L3_0_trial-65
+2015-11-17 13:51:19,310 - __main__ - INFO - src_grp: ptg_2_L2_2_L3_0_trial-65
+2015-11-17 13:51:19,310 - __main__ - INFO - src_eps: [u'4.201.1.61', u'4.201.1.64']
+2015-11-17 13:51:19,310 - __main__ - INFO - src_tenant: trial-65
+2015-11-17 13:51:19,310 - __main__ - INFO - dest_eps: [u'2.65.2.5', u'2.65.2.6']
+2015-11-17 13:51:19,310 - __main__ - INFO - 
+2015-11-17 13:51:19,310 - __main__ - INFO - **************************************************
+2015-11-17 13:51:19,310 - __main__ - INFO - dest_tenant: trial-65
+2015-11-17 13:51:19,311 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 13:51:19,311 - __main__ - INFO - dest_grp: ptg_1_L2_1_L3_0_trial-65
+2015-11-17 13:51:19,311 - __main__ - INFO - src_grp: ptg_1_L2_1_L3_0_trial-65
+2015-11-17 13:51:19,311 - __main__ - INFO - src_eps: [u'4.201.1.63', u'4.201.1.65', u'4.201.1.66']
+2015-11-17 13:51:19,311 - __main__ - INFO - src_tenant: trial-65
+2015-11-17 13:51:19,311 - __main__ - INFO - dest_eps: [u'2.65.0.5', u'2.65.0.6', u'2.65.0.7']
+2015-11-17 13:51:19,311 - __main__ - INFO - 
+2015-11-17 13:51:19,375 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:51:19,378 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:51:19,388 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:51:19,573 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:51:19,575 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:51:19,580 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:51:21,718 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:51:21,718 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:51:21,726 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:51:21,944 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:51:21,944 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:51:22,114 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:51:22,117 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:51:24,214 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:51:24,215 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:51:24,427 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:51:24,428 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:51:24,604 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:51:24,604 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:51:26,442 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:51:26,443 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:51:26,657 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:51:26,662 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:51:26,670 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 13:51:26,822 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:51:26,837 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:51:26,845 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 13:51:28,936 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:51:28,954 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 13:51:28,954 - paramiko.transport - INFO - Authentication (password) failed.
+2015-11-17 14:07:35,145 - __main__ - INFO - Start the program
+2015-11-17 14:07:35,145 - __main__ - INFO - Initialize OSUtils
+2015-11-17 14:07:35,145 - __main__ - INFO - 
+
+Get tenant details
+
+
+2015-11-17 14:07:35,146 - libs.os_get_env - INFO - Get tenant list from Keystone
+2015-11-17 14:07:35,188 - libs.os_get_env - INFO - [<Tenant {u'enabled': True, u'description': u'admin tenant', u'name': u'admin', u'id': u'0653a3f46957480d999d754e7ea3cadc'}>, <Tenant {u'enabled': True, u'description': u'default tenant', u'name': u'demo', u'id': u'32ba63ad652140339a6c4e388188f52b'}>, <Tenant {u'enabled': True, u'description': u'Tenant for the openstack services', u'name': u'services', u'id': u'ef6a9a352a52417caee6fe9ec3d76e81'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-1', u'id': u'0adcf03335e24f7482306fb06e463373'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-19', u'id': u'09bb25794ce44364a2f618d9fce5f57d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-2', u'id': u'198ad6db34df469592efaa604f4f23c6'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-20', u'id': u'982a8d1247c34e0b85a46b73eb73a639'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-21', u'id': u'db27a726aca9430bab38cf5789c5f411'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-22', u'id': u'18a91c17cc064a07996f5702f6480765'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-23', u'id': u'2dd4b7b615654cc9b0e42cccb1c7882f'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-24', u'id': u'3482ba21bcee4e0792cd41052e771b94'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-25', u'id': u'b884bfce35f046f3a2fe69a4349625f0'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-3', u'id': u'75910da7f5794c09aee3a1f6c44e190d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-39', u'id': u'9ef10e1823f84bb5bf9c2099681168f9'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-4', u'id': u'c44db4aad74d43e2a399107467cfcf44'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-40', u'id': u'0eb096b84a934dbca6e38393307f17bd'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-41', u'id': u'99cd113467fb423094cdb0785a71e950'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-42', u'id': u'6960af21d2774244b8c7bcd04038bf6a'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-43', u'id': u'214fb8e8e1c44ccf88bcb863121f33bc'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-44', u'id': u'0670fabfabc24a78978d747a2715329d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-45', u'id': u'e6acceb19ce24011a343bbc6deec8b54'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-5', u'id': u'03f60c6551af41779ba941d5f594b5ad'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-59', u'id': u'd7f187167f53451b9c8d87b09882ec52'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-60', u'id': u'edf5499ac0584889bfb9f4a547b92ee7'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-61', u'id': u'dc8daaec964448a989592e5b064ec9cf'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-62', u'id': u'e4d51f8b84024cc5a59274d36bf3a67d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-63', u'id': u'ed7831fec5b048b295c9d2ad8e8c12f3'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-64', u'id': u'e533832daa9a4eaf8e5e94b1970a22d6'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-65', u'id': u'4faa47eb65bb4c81bcb8ae057785714a'}>]
+2015-11-17 14:07:35,188 - __main__ - INFO - {u'0adcf03335e24f7482306fb06e463373': u'trial-1'}
+2015-11-17 14:07:35,189 - __main__ - INFO - 
+
+Get policy-target-groups for all tenants
+
+
+2015-11-17 14:07:36,478 - __main__ - INFO - 
+
+Get policy-rule-sets for all tenants
+
+
+2015-11-17 14:07:38,536 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:07:38,536 - __main__ - INFO - {u'subnets': [u'8f7ea109-9d7e-4bb3-bf68-8dc48f66c634'], u'description': u'', u'consumed_policy_rule_sets': [u'43050f28-39e3-466b-9ee5-41ad7de5c4f3', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'3f0d54bc-f662-44ad-838c-076a6baa0a0a', u'tenant_id': u'0adcf03335e24f7482306fb06e463373', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'43050f28-39e3-466b-9ee5-41ad7de5c4f3', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [], u'shared': False, u'l2_policy_id': u'4f3b2992-d0a8-4ea3-8fc1-73d4b26bccfa', u'id': u'1658b832-55ff-48c4-a1f2-3552cd2e438b', u'name': u'ptg_4_L2_4_L3_0_trial-1'}
+2015-11-17 14:07:38,536 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:07:38,536 - __main__ - INFO - {u'subnets': [u'68f40d40-25fb-4d0b-aba7-a47cd2913c78'], u'description': u'', u'consumed_policy_rule_sets': [u'43050f28-39e3-466b-9ee5-41ad7de5c4f3', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'3f0d54bc-f662-44ad-838c-076a6baa0a0a', u'tenant_id': u'0adcf03335e24f7482306fb06e463373', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'43050f28-39e3-466b-9ee5-41ad7de5c4f3', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'2331f808-6f98-4e4a-ba51-21eb637d366b', u'33735760-aff3-4c74-96db-17f3a66a06a8', u'5c8d3e20-df20-4bc4-b57c-2cfdd167ccd0', u'e2bd63a2-9519-4c5a-973c-ad18190e77cd'], u'shared': False, u'l2_policy_id': u'089d53b3-6e44-464e-9013-d35efe5e82b6', u'id': u'77ceed7f-cf7b-4a35-9215-58cf133b8b3f', u'name': u'ptg_0_L2_0_L3_0_trial-1'}
+2015-11-17 14:07:39,185 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:07:39,186 - __main__ - INFO - {u'subnets': [u'655fbb82-888b-49f0-b656-194421c96bd7'], u'description': u'', u'consumed_policy_rule_sets': [u'43050f28-39e3-466b-9ee5-41ad7de5c4f3', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'3f0d54bc-f662-44ad-838c-076a6baa0a0a', u'tenant_id': u'0adcf03335e24f7482306fb06e463373', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'43050f28-39e3-466b-9ee5-41ad7de5c4f3', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'00105ccf-17d3-4284-84eb-149c08a1c011', u'51d5439e-96d4-4685-85e8-89cc87225abe', u'c2c1a0b9-48c7-4bba-b626-dfe09f6f2099'], u'shared': False, u'l2_policy_id': u'9790f017-25b8-4e8c-bede-bc0f907c8d9a', u'id': u'91265ddb-f40a-4655-8bf5-c5cef0d0ba71', u'name': u'ptg_3_L2_3_L3_0_trial-1'}
+2015-11-17 14:07:39,415 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:07:39,415 - __main__ - INFO - {u'subnets': [u'34fc5169-312a-43c9-865a-007ee1c22e85'], u'description': u'', u'consumed_policy_rule_sets': [u'43050f28-39e3-466b-9ee5-41ad7de5c4f3', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'3f0d54bc-f662-44ad-838c-076a6baa0a0a', u'tenant_id': u'0adcf03335e24f7482306fb06e463373', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'43050f28-39e3-466b-9ee5-41ad7de5c4f3', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'53456d69-4d06-4edf-9c63-f87bcaa27075', u'6f34a472-a4c5-49c3-96dc-04b019e89fa1', u'a33e16aa-be3f-40a3-abeb-b71102270dd6', u'b6200b5b-5f1f-43ff-9ba8-567a593813f4'], u'shared': False, u'l2_policy_id': u'37f07803-2fd3-43a5-ac1a-da51f25b3ca8', u'id': u'bf863d1d-44a6-4417-b1d1-6dc2ecc6dd1d', u'name': u'ptg_1_L2_1_L3_0_trial-1'}
+2015-11-17 14:07:39,619 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:07:39,620 - __main__ - INFO - {u'subnets': [u'98d07cf4-e4d0-4480-bc70-5c432ddfe79a'], u'description': u'', u'consumed_policy_rule_sets': [u'43050f28-39e3-466b-9ee5-41ad7de5c4f3', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'3f0d54bc-f662-44ad-838c-076a6baa0a0a', u'tenant_id': u'0adcf03335e24f7482306fb06e463373', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'43050f28-39e3-466b-9ee5-41ad7de5c4f3', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'2a910620-e1a1-47bf-8223-56a7fb6f9f11', u'cc16796a-517b-4c8d-9920-7debb2c65674', u'fa6ddcf1-e8fe-49e3-9eab-88dea44bd9ad'], u'shared': False, u'l2_policy_id': u'6383e719-7f4d-4a24-94a9-a98759786c44', u'id': u'f9219913-0fab-4667-b33b-8ca12d2bfeba', u'name': u'ptg_2_L2_2_L3_0_trial-1'}
+2015-11-17 14:07:39,766 - __main__ - INFO - **************************************************
+2015-11-17 14:07:39,766 - __main__ - INFO - dest_tenant: trial-1
+2015-11-17 14:07:39,766 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:07:39,767 - __main__ - INFO - dest_grp: ptg_4_L2_4_L3_0_trial-1
+2015-11-17 14:07:39,767 - __main__ - INFO - src_grp: ptg_4_L2_4_L3_0_trial-1
+2015-11-17 14:07:39,767 - __main__ - INFO - src_eps: []
+2015-11-17 14:07:39,767 - __main__ - INFO - src_tenant: trial-1
+2015-11-17 14:07:39,767 - __main__ - INFO - dest_eps: []
+2015-11-17 14:07:39,768 - __main__ - INFO - 
+2015-11-17 14:07:39,768 - __main__ - INFO - **************************************************
+2015-11-17 14:07:39,768 - __main__ - INFO - dest_tenant: trial-1
+2015-11-17 14:07:39,768 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:07:39,768 - __main__ - INFO - dest_grp: ptg_0_L2_0_L3_0_trial-1
+2015-11-17 14:07:39,769 - __main__ - INFO - src_grp: ptg_0_L2_0_L3_0_trial-1
+2015-11-17 14:07:39,769 - __main__ - INFO - src_eps: [u'4.201.0.3', u'4.201.0.11', u'4.201.0.5', u'4.201.0.4']
+2015-11-17 14:07:39,769 - __main__ - INFO - src_tenant: trial-1
+2015-11-17 14:07:39,769 - __main__ - INFO - dest_eps: [u'2.1.1.5', u'2.1.1.8', u'2.1.1.7', u'2.1.1.6']
+2015-11-17 14:07:39,769 - __main__ - INFO - 
+2015-11-17 14:07:39,769 - __main__ - INFO - **************************************************
+2015-11-17 14:07:39,769 - __main__ - INFO - dest_tenant: trial-1
+2015-11-17 14:07:39,770 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:07:39,770 - __main__ - INFO - dest_grp: ptg_3_L2_3_L3_0_trial-1
+2015-11-17 14:07:39,770 - __main__ - INFO - src_grp: ptg_3_L2_3_L3_0_trial-1
+2015-11-17 14:07:39,770 - __main__ - INFO - src_eps: [u'4.201.0.12', u'4.201.0.13', u'4.201.0.9']
+2015-11-17 14:07:39,770 - __main__ - INFO - src_tenant: trial-1
+2015-11-17 14:07:39,770 - __main__ - INFO - dest_eps: [u'2.1.2.6', u'2.1.2.7', u'2.1.2.5']
+2015-11-17 14:07:39,770 - __main__ - INFO - 
+2015-11-17 14:07:39,770 - __main__ - INFO - **************************************************
+2015-11-17 14:07:39,770 - __main__ - INFO - dest_tenant: trial-1
+2015-11-17 14:07:39,771 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:07:39,771 - __main__ - INFO - dest_grp: ptg_1_L2_1_L3_0_trial-1
+2015-11-17 14:07:39,771 - __main__ - INFO - src_grp: ptg_1_L2_1_L3_0_trial-1
+2015-11-17 14:07:39,771 - __main__ - INFO - src_eps: [u'4.201.0.14', u'4.201.0.2', u'4.201.0.7', u'4.201.0.10']
+2015-11-17 14:07:39,771 - __main__ - INFO - src_tenant: trial-1
+2015-11-17 14:07:39,771 - __main__ - INFO - dest_eps: [u'2.1.3.8', u'2.1.3.4', u'2.1.3.6', u'2.1.3.7']
+2015-11-17 14:07:39,771 - __main__ - INFO - 
+2015-11-17 14:07:39,771 - __main__ - INFO - **************************************************
+2015-11-17 14:07:39,771 - __main__ - INFO - dest_tenant: trial-1
+2015-11-17 14:07:39,772 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:07:39,772 - __main__ - INFO - dest_grp: ptg_2_L2_2_L3_0_trial-1
+2015-11-17 14:07:39,772 - __main__ - INFO - src_grp: ptg_2_L2_2_L3_0_trial-1
+2015-11-17 14:07:39,772 - __main__ - INFO - src_eps: [u'4.201.0.15', u'4.201.0.8', u'4.201.0.6']
+2015-11-17 14:07:39,772 - __main__ - INFO - src_tenant: trial-1
+2015-11-17 14:07:39,772 - __main__ - INFO - dest_eps: [u'2.1.0.7', u'2.1.0.6', u'2.1.0.5']
+2015-11-17 14:07:39,772 - __main__ - INFO - 
+2015-11-17 14:09:40,541 - __main__ - INFO - Start the program
+2015-11-17 14:09:40,542 - __main__ - INFO - Initialize OSUtils
+2015-11-17 14:09:40,542 - __main__ - INFO - 
+
+Get tenant details
+
+
+2015-11-17 14:09:40,542 - libs.os_get_env - INFO - Get tenant list from Keystone
+2015-11-17 14:09:40,609 - libs.os_get_env - INFO - [<Tenant {u'enabled': True, u'description': u'admin tenant', u'name': u'admin', u'id': u'0653a3f46957480d999d754e7ea3cadc'}>, <Tenant {u'enabled': True, u'description': u'default tenant', u'name': u'demo', u'id': u'32ba63ad652140339a6c4e388188f52b'}>, <Tenant {u'enabled': True, u'description': u'Tenant for the openstack services', u'name': u'services', u'id': u'ef6a9a352a52417caee6fe9ec3d76e81'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-1', u'id': u'0adcf03335e24f7482306fb06e463373'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-19', u'id': u'09bb25794ce44364a2f618d9fce5f57d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-2', u'id': u'198ad6db34df469592efaa604f4f23c6'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-20', u'id': u'982a8d1247c34e0b85a46b73eb73a639'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-21', u'id': u'db27a726aca9430bab38cf5789c5f411'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-22', u'id': u'18a91c17cc064a07996f5702f6480765'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-23', u'id': u'2dd4b7b615654cc9b0e42cccb1c7882f'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-24', u'id': u'3482ba21bcee4e0792cd41052e771b94'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-25', u'id': u'b884bfce35f046f3a2fe69a4349625f0'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-3', u'id': u'75910da7f5794c09aee3a1f6c44e190d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-39', u'id': u'9ef10e1823f84bb5bf9c2099681168f9'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-4', u'id': u'c44db4aad74d43e2a399107467cfcf44'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-40', u'id': u'0eb096b84a934dbca6e38393307f17bd'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-41', u'id': u'99cd113467fb423094cdb0785a71e950'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-42', u'id': u'6960af21d2774244b8c7bcd04038bf6a'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-43', u'id': u'214fb8e8e1c44ccf88bcb863121f33bc'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-44', u'id': u'0670fabfabc24a78978d747a2715329d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-45', u'id': u'e6acceb19ce24011a343bbc6deec8b54'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-5', u'id': u'03f60c6551af41779ba941d5f594b5ad'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-59', u'id': u'd7f187167f53451b9c8d87b09882ec52'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-60', u'id': u'edf5499ac0584889bfb9f4a547b92ee7'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-61', u'id': u'dc8daaec964448a989592e5b064ec9cf'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-62', u'id': u'e4d51f8b84024cc5a59274d36bf3a67d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-63', u'id': u'ed7831fec5b048b295c9d2ad8e8c12f3'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-64', u'id': u'e533832daa9a4eaf8e5e94b1970a22d6'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-65', u'id': u'4faa47eb65bb4c81bcb8ae057785714a'}>]
+2015-11-17 14:09:40,610 - __main__ - INFO - {u'198ad6db34df469592efaa604f4f23c6': u'trial-2'}
+2015-11-17 14:09:40,610 - __main__ - INFO - 
+
+Get policy-target-groups for all tenants
+
+
+2015-11-17 14:09:42,508 - __main__ - INFO - 
+
+Get policy-rule-sets for all tenants
+
+
+2015-11-17 14:09:45,250 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:09:45,251 - __main__ - INFO - {u'subnets': [u'9e9aefca-e565-484b-baeb-55dadcc8b2bb'], u'description': u'', u'consumed_policy_rule_sets': [u'4273d544-0f62-4c24-86c5-7b05278960fd', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'8acab450-433b-4cc7-8530-e3a638c7a715', u'tenant_id': u'198ad6db34df469592efaa604f4f23c6', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'4273d544-0f62-4c24-86c5-7b05278960fd', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'1f765e39-3f6b-432d-8966-0caab7aaa906', u'9187160f-5630-4f3f-922c-1d359d1e584f', u'e5128877-7cd2-41a4-b8e4-66c482293d59'], u'shared': False, u'l2_policy_id': u'34e0155b-2ccc-426c-8f5b-8f7d87ef3832', u'id': u'05232680-0a6e-4d23-b5f1-92b8ccd4f6c9', u'name': u'ptg_3_L2_3_L3_0_trial-2'}
+2015-11-17 14:09:45,738 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:09:45,738 - __main__ - INFO - {u'subnets': [u'c9276311-24bc-4918-930c-59b57a9a924e'], u'description': u'', u'consumed_policy_rule_sets': [u'4273d544-0f62-4c24-86c5-7b05278960fd', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'8acab450-433b-4cc7-8530-e3a638c7a715', u'tenant_id': u'198ad6db34df469592efaa604f4f23c6', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'4273d544-0f62-4c24-86c5-7b05278960fd', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'17858c21-74a3-494f-b8d4-638e5165b072', u'426efe9f-fe06-4766-b530-17026dfa79f8', u'6a831297-8e09-47dc-b76a-37d7f7973e34', u'74c56a0c-e647-4f0b-9c55-6db82d463e10'], u'shared': False, u'l2_policy_id': u'f43bcd9e-3da5-4c61-9476-b1ba5af92411', u'id': u'258d018a-1af6-4554-9827-4169f6e075c6', u'name': u'ptg_1_L2_1_L3_0_trial-2'}
+2015-11-17 14:09:46,344 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:09:46,344 - __main__ - INFO - {u'subnets': [u'a4a2d211-8fa0-4e34-9780-063d5a76d260'], u'description': u'', u'consumed_policy_rule_sets': [u'4273d544-0f62-4c24-86c5-7b05278960fd', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'8acab450-433b-4cc7-8530-e3a638c7a715', u'tenant_id': u'198ad6db34df469592efaa604f4f23c6', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'4273d544-0f62-4c24-86c5-7b05278960fd', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'28236565-04fd-421b-8dfc-b7e0cfa4e6ad', u'f5d46f05-22f8-4d99-9474-43dba7ec854f', u'f5fe3be2-c8ff-40d2-99f7-8528ffe41ea9'], u'shared': False, u'l2_policy_id': u'4fc3346e-c996-46dc-acfb-08a23e429496', u'id': u'e3a9f889-8358-44ab-9205-5de6031e4ae2', u'name': u'ptg_2_L2_2_L3_0_trial-2'}
+2015-11-17 14:09:46,501 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:09:46,501 - __main__ - INFO - {u'subnets': [u'beacafd2-49be-46b5-99be-9d51930c7d44'], u'description': u'', u'consumed_policy_rule_sets': [u'4273d544-0f62-4c24-86c5-7b05278960fd', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'8acab450-433b-4cc7-8530-e3a638c7a715', u'tenant_id': u'198ad6db34df469592efaa604f4f23c6', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'4273d544-0f62-4c24-86c5-7b05278960fd', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'17810ee7-41cf-4c28-9321-dcbc0026d7ba', u'65b840f5-7bc2-42dc-9b89-15d555e4cbf0', u'b5da1716-4fff-4f66-80f6-1ebb35116d56', u'f38f36dd-1f5e-4f07-bed8-238d8378da1e'], u'shared': False, u'l2_policy_id': u'395bb15b-0572-4ffc-a255-600706678f06', u'id': u'fd3000e2-3391-4dd4-98ed-99fbe70783ca', u'name': u'ptg_0_L2_0_L3_0_trial-2'}
+2015-11-17 14:09:46,740 - __main__ - INFO - **************************************************
+2015-11-17 14:09:46,740 - __main__ - INFO - dest_tenant: trial-2
+2015-11-17 14:09:46,741 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:09:46,741 - __main__ - INFO - dest_grp: ptg_3_L2_3_L3_0_trial-2
+2015-11-17 14:09:46,741 - __main__ - INFO - src_grp: ptg_3_L2_3_L3_0_trial-2
+2015-11-17 14:09:46,741 - __main__ - INFO - src_eps: [u'4.201.0.27', u'4.201.0.16', u'4.201.0.25']
+2015-11-17 14:09:46,741 - __main__ - INFO - src_tenant: trial-2
+2015-11-17 14:09:46,742 - __main__ - INFO - dest_eps: [u'2.2.3.7', u'2.2.3.4', u'2.2.3.6']
+2015-11-17 14:09:46,742 - __main__ - INFO - 
+2015-11-17 14:09:46,742 - __main__ - INFO - **************************************************
+2015-11-17 14:09:46,742 - __main__ - INFO - dest_tenant: trial-2
+2015-11-17 14:09:46,742 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:09:46,743 - __main__ - INFO - dest_grp: ptg_1_L2_1_L3_0_trial-2
+2015-11-17 14:09:46,743 - __main__ - INFO - src_grp: ptg_1_L2_1_L3_0_trial-2
+2015-11-17 14:09:46,743 - __main__ - INFO - src_eps: [u'4.201.0.17', u'4.201.0.28', u'4.201.0.20', u'4.201.0.22']
+2015-11-17 14:09:46,743 - __main__ - INFO - src_tenant: trial-2
+2015-11-17 14:09:46,743 - __main__ - INFO - dest_eps: [u'2.2.1.5', u'2.2.1.8', u'2.2.1.6', u'2.2.1.7']
+2015-11-17 14:09:46,743 - __main__ - INFO - 
+2015-11-17 14:09:46,743 - __main__ - INFO - **************************************************
+2015-11-17 14:09:46,744 - __main__ - INFO - dest_tenant: trial-2
+2015-11-17 14:09:46,744 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:09:46,744 - __main__ - INFO - dest_grp: ptg_2_L2_2_L3_0_trial-2
+2015-11-17 14:09:46,744 - __main__ - INFO - src_grp: ptg_2_L2_2_L3_0_trial-2
+2015-11-17 14:09:46,744 - __main__ - INFO - src_eps: [u'4.201.0.19', u'4.201.0.26', u'4.201.0.18']
+2015-11-17 14:09:46,744 - __main__ - INFO - src_tenant: trial-2
+2015-11-17 14:09:46,744 - __main__ - INFO - dest_eps: [u'2.2.0.6', u'2.2.0.7', u'2.2.0.5']
+2015-11-17 14:09:46,745 - __main__ - INFO - 
+2015-11-17 14:09:46,745 - __main__ - INFO - **************************************************
+2015-11-17 14:09:46,745 - __main__ - INFO - dest_tenant: trial-2
+2015-11-17 14:09:46,745 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:09:46,745 - __main__ - INFO - dest_grp: ptg_0_L2_0_L3_0_trial-2
+2015-11-17 14:09:46,745 - __main__ - INFO - src_grp: ptg_0_L2_0_L3_0_trial-2
+2015-11-17 14:09:46,745 - __main__ - INFO - src_eps: [u'4.201.0.29', u'4.201.0.24', u'4.201.0.23', u'4.201.0.21']
+2015-11-17 14:09:46,745 - __main__ - INFO - src_tenant: trial-2
+2015-11-17 14:09:46,746 - __main__ - INFO - dest_eps: [u'2.2.2.8', u'2.2.2.7', u'2.2.2.6', u'2.2.2.5']
+2015-11-17 14:09:46,746 - __main__ - INFO - 
+2015-11-17 14:09:46,813 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:46,816 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:46,818 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:47,018 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:47,030 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:47,032 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:47,038 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:47,051 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:47,054 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:47,167 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:47,174 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:47,182 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:47,366 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:47,394 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:47,396 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:47,403 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:47,430 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:47,447 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:47,886 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:47,887 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:47,888 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:48,072 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:48,072 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:48,086 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:48,091 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:48,091 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:48,105 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:48,195 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:48,197 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:48,225 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:48,388 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:48,390 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:48,417 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:48,420 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:48,424 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:48,456 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:49,023 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:49,034 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:49,039 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:49,045 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:49,221 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:49,235 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:49,241 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:49,244 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:49,246 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:49,258 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:49,273 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:49,282 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:49,363 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:49,392 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:49,416 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:49,424 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:49,606 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:49,619 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:49,623 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:49,645 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:49,645 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:49,654 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:49,658 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:49,679 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:50,144 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:50,146 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:50,154 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:50,154 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:50,343 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:50,358 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:50,358 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:50,360 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:50,385 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:50,393 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:50,403 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:50,406 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:50,602 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:50,609 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:50,619 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:50,636 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:50,790 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:50,817 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:50,827 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:50,836 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:50,840 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:50,855 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:50,861 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:50,875 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:51,584 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:51,589 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:51,593 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:51,785 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:51,786 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:51,791 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:51,809 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:51,812 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:51,814 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:51,925 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:51,928 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:51,928 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:52,139 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:52,143 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:52,148 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:52,175 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:52,180 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:52,184 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:52,638 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:52,641 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:52,642 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:52,830 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:52,834 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:52,836 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:52,855 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:52,863 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:52,869 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:52,973 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:52,973 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:52,984 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:53,209 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:53,211 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:53,214 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:53,245 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:53,250 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:53,251 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:53,888 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:53,891 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:53,899 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:53,901 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:54,102 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:54,103 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:54,112 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:54,112 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:54,138 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:54,149 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:54,153 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:54,154 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:54,312 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:54,324 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:54,377 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:54,389 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:54,512 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:54,537 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:54,558 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:54,566 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:54,575 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:54,593 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:54,614 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:54,649 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:55,105 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:55,116 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:55,125 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:55,127 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:55,292 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:55,293 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:55,313 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:55,313 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:55,315 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:55,328 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:55,330 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:55,330 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:55,439 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:55,453 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:55,462 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:55,507 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:09:55,649 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:55,657 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:55,674 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:55,678 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:55,682 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:55,710 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:09:55,717 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:09:55,755 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:33,268 - __main__ - INFO - Start the program
+2015-11-17 14:11:33,269 - __main__ - INFO - Initialize OSUtils
+2015-11-17 14:11:33,269 - __main__ - INFO - 
+
+Get tenant details
+
+
+2015-11-17 14:11:33,269 - libs.os_get_env - INFO - Get tenant list from Keystone
+2015-11-17 14:11:33,311 - libs.os_get_env - INFO - [<Tenant {u'enabled': True, u'description': u'admin tenant', u'name': u'admin', u'id': u'0653a3f46957480d999d754e7ea3cadc'}>, <Tenant {u'enabled': True, u'description': u'default tenant', u'name': u'demo', u'id': u'32ba63ad652140339a6c4e388188f52b'}>, <Tenant {u'enabled': True, u'description': u'Tenant for the openstack services', u'name': u'services', u'id': u'ef6a9a352a52417caee6fe9ec3d76e81'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-1', u'id': u'0adcf03335e24f7482306fb06e463373'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-19', u'id': u'09bb25794ce44364a2f618d9fce5f57d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-2', u'id': u'198ad6db34df469592efaa604f4f23c6'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-20', u'id': u'982a8d1247c34e0b85a46b73eb73a639'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-21', u'id': u'db27a726aca9430bab38cf5789c5f411'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-22', u'id': u'18a91c17cc064a07996f5702f6480765'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-23', u'id': u'2dd4b7b615654cc9b0e42cccb1c7882f'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-24', u'id': u'3482ba21bcee4e0792cd41052e771b94'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-25', u'id': u'b884bfce35f046f3a2fe69a4349625f0'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-3', u'id': u'75910da7f5794c09aee3a1f6c44e190d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-39', u'id': u'9ef10e1823f84bb5bf9c2099681168f9'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-4', u'id': u'c44db4aad74d43e2a399107467cfcf44'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-40', u'id': u'0eb096b84a934dbca6e38393307f17bd'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-41', u'id': u'99cd113467fb423094cdb0785a71e950'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-42', u'id': u'6960af21d2774244b8c7bcd04038bf6a'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-43', u'id': u'214fb8e8e1c44ccf88bcb863121f33bc'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-44', u'id': u'0670fabfabc24a78978d747a2715329d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-45', u'id': u'e6acceb19ce24011a343bbc6deec8b54'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-5', u'id': u'03f60c6551af41779ba941d5f594b5ad'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-59', u'id': u'd7f187167f53451b9c8d87b09882ec52'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-60', u'id': u'edf5499ac0584889bfb9f4a547b92ee7'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-61', u'id': u'dc8daaec964448a989592e5b064ec9cf'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-62', u'id': u'e4d51f8b84024cc5a59274d36bf3a67d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-63', u'id': u'ed7831fec5b048b295c9d2ad8e8c12f3'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-64', u'id': u'e533832daa9a4eaf8e5e94b1970a22d6'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-65', u'id': u'4faa47eb65bb4c81bcb8ae057785714a'}>]
+2015-11-17 14:11:33,311 - __main__ - INFO - {u'198ad6db34df469592efaa604f4f23c6': u'trial-2'}
+2015-11-17 14:11:33,311 - __main__ - INFO - 
+
+Get policy-target-groups for all tenants
+
+
+2015-11-17 14:11:34,801 - __main__ - INFO - 
+
+Get policy-rule-sets for all tenants
+
+
+2015-11-17 14:11:37,101 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:11:37,101 - __main__ - INFO - {u'subnets': [u'9e9aefca-e565-484b-baeb-55dadcc8b2bb'], u'description': u'', u'consumed_policy_rule_sets': [u'4273d544-0f62-4c24-86c5-7b05278960fd', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'8acab450-433b-4cc7-8530-e3a638c7a715', u'tenant_id': u'198ad6db34df469592efaa604f4f23c6', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'4273d544-0f62-4c24-86c5-7b05278960fd', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'1f765e39-3f6b-432d-8966-0caab7aaa906', u'9187160f-5630-4f3f-922c-1d359d1e584f', u'e5128877-7cd2-41a4-b8e4-66c482293d59'], u'shared': False, u'l2_policy_id': u'34e0155b-2ccc-426c-8f5b-8f7d87ef3832', u'id': u'05232680-0a6e-4d23-b5f1-92b8ccd4f6c9', u'name': u'ptg_3_L2_3_L3_0_trial-2'}
+2015-11-17 14:11:37,533 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:11:37,533 - __main__ - INFO - {u'subnets': [u'c9276311-24bc-4918-930c-59b57a9a924e'], u'description': u'', u'consumed_policy_rule_sets': [u'4273d544-0f62-4c24-86c5-7b05278960fd', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'8acab450-433b-4cc7-8530-e3a638c7a715', u'tenant_id': u'198ad6db34df469592efaa604f4f23c6', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'4273d544-0f62-4c24-86c5-7b05278960fd', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'17858c21-74a3-494f-b8d4-638e5165b072', u'426efe9f-fe06-4766-b530-17026dfa79f8', u'6a831297-8e09-47dc-b76a-37d7f7973e34', u'74c56a0c-e647-4f0b-9c55-6db82d463e10'], u'shared': False, u'l2_policy_id': u'f43bcd9e-3da5-4c61-9476-b1ba5af92411', u'id': u'258d018a-1af6-4554-9827-4169f6e075c6', u'name': u'ptg_1_L2_1_L3_0_trial-2'}
+2015-11-17 14:11:37,878 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:11:37,878 - __main__ - INFO - {u'subnets': [u'a4a2d211-8fa0-4e34-9780-063d5a76d260'], u'description': u'', u'consumed_policy_rule_sets': [u'4273d544-0f62-4c24-86c5-7b05278960fd', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'8acab450-433b-4cc7-8530-e3a638c7a715', u'tenant_id': u'198ad6db34df469592efaa604f4f23c6', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'4273d544-0f62-4c24-86c5-7b05278960fd', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'28236565-04fd-421b-8dfc-b7e0cfa4e6ad', u'f5d46f05-22f8-4d99-9474-43dba7ec854f', u'f5fe3be2-c8ff-40d2-99f7-8528ffe41ea9'], u'shared': False, u'l2_policy_id': u'4fc3346e-c996-46dc-acfb-08a23e429496', u'id': u'e3a9f889-8358-44ab-9205-5de6031e4ae2', u'name': u'ptg_2_L2_2_L3_0_trial-2'}
+2015-11-17 14:11:38,060 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:11:38,060 - __main__ - INFO - {u'subnets': [u'beacafd2-49be-46b5-99be-9d51930c7d44'], u'description': u'', u'consumed_policy_rule_sets': [u'4273d544-0f62-4c24-86c5-7b05278960fd', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'8acab450-433b-4cc7-8530-e3a638c7a715', u'tenant_id': u'198ad6db34df469592efaa604f4f23c6', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'4273d544-0f62-4c24-86c5-7b05278960fd', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'17810ee7-41cf-4c28-9321-dcbc0026d7ba', u'65b840f5-7bc2-42dc-9b89-15d555e4cbf0', u'b5da1716-4fff-4f66-80f6-1ebb35116d56', u'f38f36dd-1f5e-4f07-bed8-238d8378da1e'], u'shared': False, u'l2_policy_id': u'395bb15b-0572-4ffc-a255-600706678f06', u'id': u'fd3000e2-3391-4dd4-98ed-99fbe70783ca', u'name': u'ptg_0_L2_0_L3_0_trial-2'}
+2015-11-17 14:11:38,263 - __main__ - INFO - **************************************************
+2015-11-17 14:11:38,263 - __main__ - INFO - dest_tenant: trial-2
+2015-11-17 14:11:38,264 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:11:38,264 - __main__ - INFO - dest_grp: ptg_3_L2_3_L3_0_trial-2
+2015-11-17 14:11:38,264 - __main__ - INFO - src_grp: ptg_3_L2_3_L3_0_trial-2
+2015-11-17 14:11:38,264 - __main__ - INFO - src_eps: [u'4.201.0.27', u'4.201.0.16', u'4.201.0.25']
+2015-11-17 14:11:38,264 - __main__ - INFO - src_tenant: trial-2
+2015-11-17 14:11:38,265 - __main__ - INFO - dest_eps: [u'2.2.3.7', u'2.2.3.4', u'2.2.3.6']
+2015-11-17 14:11:38,265 - __main__ - INFO - 
+2015-11-17 14:11:38,265 - __main__ - INFO - **************************************************
+2015-11-17 14:11:38,265 - __main__ - INFO - dest_tenant: trial-2
+2015-11-17 14:11:38,266 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:11:38,266 - __main__ - INFO - dest_grp: ptg_1_L2_1_L3_0_trial-2
+2015-11-17 14:11:38,266 - __main__ - INFO - src_grp: ptg_1_L2_1_L3_0_trial-2
+2015-11-17 14:11:38,266 - __main__ - INFO - src_eps: [u'4.201.0.17', u'4.201.0.28', u'4.201.0.20', u'4.201.0.22']
+2015-11-17 14:11:38,266 - __main__ - INFO - src_tenant: trial-2
+2015-11-17 14:11:38,266 - __main__ - INFO - dest_eps: [u'2.2.1.5', u'2.2.1.8', u'2.2.1.6', u'2.2.1.7']
+2015-11-17 14:11:38,266 - __main__ - INFO - 
+2015-11-17 14:11:38,266 - __main__ - INFO - **************************************************
+2015-11-17 14:11:38,267 - __main__ - INFO - dest_tenant: trial-2
+2015-11-17 14:11:38,267 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:11:38,267 - __main__ - INFO - dest_grp: ptg_2_L2_2_L3_0_trial-2
+2015-11-17 14:11:38,267 - __main__ - INFO - src_grp: ptg_2_L2_2_L3_0_trial-2
+2015-11-17 14:11:38,267 - __main__ - INFO - src_eps: [u'4.201.0.19', u'4.201.0.26', u'4.201.0.18']
+2015-11-17 14:11:38,267 - __main__ - INFO - src_tenant: trial-2
+2015-11-17 14:11:38,267 - __main__ - INFO - dest_eps: [u'2.2.0.6', u'2.2.0.7', u'2.2.0.5']
+2015-11-17 14:11:38,268 - __main__ - INFO - 
+2015-11-17 14:11:38,268 - __main__ - INFO - **************************************************
+2015-11-17 14:11:38,268 - __main__ - INFO - dest_tenant: trial-2
+2015-11-17 14:11:38,268 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:11:38,268 - __main__ - INFO - dest_grp: ptg_0_L2_0_L3_0_trial-2
+2015-11-17 14:11:38,268 - __main__ - INFO - src_grp: ptg_0_L2_0_L3_0_trial-2
+2015-11-17 14:11:38,268 - __main__ - INFO - src_eps: [u'4.201.0.29', u'4.201.0.24', u'4.201.0.23', u'4.201.0.21']
+2015-11-17 14:11:38,268 - __main__ - INFO - src_tenant: trial-2
+2015-11-17 14:11:38,269 - __main__ - INFO - dest_eps: [u'2.2.2.8', u'2.2.2.7', u'2.2.2.6', u'2.2.2.5']
+2015-11-17 14:11:38,269 - __main__ - INFO - 
+2015-11-17 14:11:38,333 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:38,336 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:38,338 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:38,512 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:38,524 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:38,526 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:38,536 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:38,548 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:38,549 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:38,651 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:38,663 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:38,679 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:38,841 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:38,848 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:38,868 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:38,886 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:38,905 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:38,933 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:39,383 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:11:39,387 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:11:39,407 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:11:39,412 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:11:39,418 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:11:39,441 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:11:39,637 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:39,648 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:39,648 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:39,674 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:39,836 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:39,855 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:39,858 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:39,862 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:39,864 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:39,884 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:39,885 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:39,891 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:40,009 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:40,047 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:40,067 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:40,071 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:40,249 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:40,258 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:40,278 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:40,285 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:40,285 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:40,294 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:40,321 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:40,321 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:40,779 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:11:40,797 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:11:40,805 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:11:40,821 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:11:40,831 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:11:40,837 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:11:40,854 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:11:40,861 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:11:41,046 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:41,050 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:41,051 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:41,242 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:41,246 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:41,249 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:41,267 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:41,273 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:41,275 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:41,386 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:41,386 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:41,397 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:41,582 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:41,582 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:41,608 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:41,618 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:41,618 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:41,643 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:42,148 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:11:42,161 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:11:42,161 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:11:42,177 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:11:42,184 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:11:42,184 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:11:42,391 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:42,395 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:42,395 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:42,403 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:42,575 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:42,594 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:42,595 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:42,603 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:42,606 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:42,615 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:42,648 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:42,655 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:42,749 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:42,831 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:42,834 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:42,845 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:11:42,964 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:43,005 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:43,042 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:43,052 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:43,062 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:11:43,080 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:43,080 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:43,099 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:11:43,564 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:11:43,580 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:11:43,587 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:11:43,599 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:11:43,603 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:11:43,612 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:11:43,622 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:11:43,635 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:12:15,342 - __main__ - INFO - Start the program
+2015-11-17 14:12:15,343 - __main__ - INFO - Initialize OSUtils
+2015-11-17 14:12:15,343 - __main__ - INFO - 
+
+Get tenant details
+
+
+2015-11-17 14:12:15,343 - libs.os_get_env - INFO - Get tenant list from Keystone
+2015-11-17 14:12:15,382 - libs.os_get_env - INFO - [<Tenant {u'enabled': True, u'description': u'admin tenant', u'name': u'admin', u'id': u'0653a3f46957480d999d754e7ea3cadc'}>, <Tenant {u'enabled': True, u'description': u'default tenant', u'name': u'demo', u'id': u'32ba63ad652140339a6c4e388188f52b'}>, <Tenant {u'enabled': True, u'description': u'Tenant for the openstack services', u'name': u'services', u'id': u'ef6a9a352a52417caee6fe9ec3d76e81'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-1', u'id': u'0adcf03335e24f7482306fb06e463373'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-19', u'id': u'09bb25794ce44364a2f618d9fce5f57d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-2', u'id': u'198ad6db34df469592efaa604f4f23c6'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-20', u'id': u'982a8d1247c34e0b85a46b73eb73a639'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-21', u'id': u'db27a726aca9430bab38cf5789c5f411'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-22', u'id': u'18a91c17cc064a07996f5702f6480765'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-23', u'id': u'2dd4b7b615654cc9b0e42cccb1c7882f'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-24', u'id': u'3482ba21bcee4e0792cd41052e771b94'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-25', u'id': u'b884bfce35f046f3a2fe69a4349625f0'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-3', u'id': u'75910da7f5794c09aee3a1f6c44e190d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-39', u'id': u'9ef10e1823f84bb5bf9c2099681168f9'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-4', u'id': u'c44db4aad74d43e2a399107467cfcf44'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-40', u'id': u'0eb096b84a934dbca6e38393307f17bd'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-41', u'id': u'99cd113467fb423094cdb0785a71e950'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-42', u'id': u'6960af21d2774244b8c7bcd04038bf6a'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-43', u'id': u'214fb8e8e1c44ccf88bcb863121f33bc'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-44', u'id': u'0670fabfabc24a78978d747a2715329d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-45', u'id': u'e6acceb19ce24011a343bbc6deec8b54'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-5', u'id': u'03f60c6551af41779ba941d5f594b5ad'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-59', u'id': u'd7f187167f53451b9c8d87b09882ec52'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-60', u'id': u'edf5499ac0584889bfb9f4a547b92ee7'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-61', u'id': u'dc8daaec964448a989592e5b064ec9cf'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-62', u'id': u'e4d51f8b84024cc5a59274d36bf3a67d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-63', u'id': u'ed7831fec5b048b295c9d2ad8e8c12f3'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-64', u'id': u'e533832daa9a4eaf8e5e94b1970a22d6'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-65', u'id': u'4faa47eb65bb4c81bcb8ae057785714a'}>]
+2015-11-17 14:12:15,382 - __main__ - INFO - {u'198ad6db34df469592efaa604f4f23c6': u'trial-2'}
+2015-11-17 14:12:15,382 - __main__ - INFO - 
+
+Get policy-target-groups for all tenants
+
+
+2015-11-17 14:12:16,753 - __main__ - INFO - 
+
+Get policy-rule-sets for all tenants
+
+
+2015-11-17 14:12:18,998 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:12:18,998 - __main__ - INFO - {u'subnets': [u'9e9aefca-e565-484b-baeb-55dadcc8b2bb'], u'description': u'', u'consumed_policy_rule_sets': [u'4273d544-0f62-4c24-86c5-7b05278960fd', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'8acab450-433b-4cc7-8530-e3a638c7a715', u'tenant_id': u'198ad6db34df469592efaa604f4f23c6', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'4273d544-0f62-4c24-86c5-7b05278960fd', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'1f765e39-3f6b-432d-8966-0caab7aaa906', u'9187160f-5630-4f3f-922c-1d359d1e584f', u'e5128877-7cd2-41a4-b8e4-66c482293d59'], u'shared': False, u'l2_policy_id': u'34e0155b-2ccc-426c-8f5b-8f7d87ef3832', u'id': u'05232680-0a6e-4d23-b5f1-92b8ccd4f6c9', u'name': u'ptg_3_L2_3_L3_0_trial-2'}
+2015-11-17 14:12:19,329 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:12:19,329 - __main__ - INFO - {u'subnets': [u'c9276311-24bc-4918-930c-59b57a9a924e'], u'description': u'', u'consumed_policy_rule_sets': [u'4273d544-0f62-4c24-86c5-7b05278960fd', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'8acab450-433b-4cc7-8530-e3a638c7a715', u'tenant_id': u'198ad6db34df469592efaa604f4f23c6', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'4273d544-0f62-4c24-86c5-7b05278960fd', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'17858c21-74a3-494f-b8d4-638e5165b072', u'426efe9f-fe06-4766-b530-17026dfa79f8', u'6a831297-8e09-47dc-b76a-37d7f7973e34', u'74c56a0c-e647-4f0b-9c55-6db82d463e10'], u'shared': False, u'l2_policy_id': u'f43bcd9e-3da5-4c61-9476-b1ba5af92411', u'id': u'258d018a-1af6-4554-9827-4169f6e075c6', u'name': u'ptg_1_L2_1_L3_0_trial-2'}
+2015-11-17 14:12:19,587 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:12:19,587 - __main__ - INFO - {u'subnets': [u'a4a2d211-8fa0-4e34-9780-063d5a76d260'], u'description': u'', u'consumed_policy_rule_sets': [u'4273d544-0f62-4c24-86c5-7b05278960fd', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'8acab450-433b-4cc7-8530-e3a638c7a715', u'tenant_id': u'198ad6db34df469592efaa604f4f23c6', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'4273d544-0f62-4c24-86c5-7b05278960fd', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'28236565-04fd-421b-8dfc-b7e0cfa4e6ad', u'f5d46f05-22f8-4d99-9474-43dba7ec854f', u'f5fe3be2-c8ff-40d2-99f7-8528ffe41ea9'], u'shared': False, u'l2_policy_id': u'4fc3346e-c996-46dc-acfb-08a23e429496', u'id': u'e3a9f889-8358-44ab-9205-5de6031e4ae2', u'name': u'ptg_2_L2_2_L3_0_trial-2'}
+2015-11-17 14:12:19,722 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:12:19,723 - __main__ - INFO - {u'subnets': [u'beacafd2-49be-46b5-99be-9d51930c7d44'], u'description': u'', u'consumed_policy_rule_sets': [u'4273d544-0f62-4c24-86c5-7b05278960fd', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'8acab450-433b-4cc7-8530-e3a638c7a715', u'tenant_id': u'198ad6db34df469592efaa604f4f23c6', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'4273d544-0f62-4c24-86c5-7b05278960fd', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'17810ee7-41cf-4c28-9321-dcbc0026d7ba', u'65b840f5-7bc2-42dc-9b89-15d555e4cbf0', u'b5da1716-4fff-4f66-80f6-1ebb35116d56', u'f38f36dd-1f5e-4f07-bed8-238d8378da1e'], u'shared': False, u'l2_policy_id': u'395bb15b-0572-4ffc-a255-600706678f06', u'id': u'fd3000e2-3391-4dd4-98ed-99fbe70783ca', u'name': u'ptg_0_L2_0_L3_0_trial-2'}
+2015-11-17 14:12:19,917 - __main__ - INFO - **************************************************
+2015-11-17 14:12:19,917 - __main__ - INFO - dest_tenant: trial-2
+2015-11-17 14:12:19,917 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:12:19,917 - __main__ - INFO - dest_grp: ptg_3_L2_3_L3_0_trial-2
+2015-11-17 14:12:19,918 - __main__ - INFO - src_grp: ptg_3_L2_3_L3_0_trial-2
+2015-11-17 14:12:19,918 - __main__ - INFO - src_eps: [u'4.201.0.27', u'4.201.0.16', u'4.201.0.25']
+2015-11-17 14:12:19,918 - __main__ - INFO - src_tenant: trial-2
+2015-11-17 14:12:19,918 - __main__ - INFO - dest_eps: [u'2.2.3.7', u'2.2.3.4', u'2.2.3.6']
+2015-11-17 14:12:19,918 - __main__ - INFO - 
+2015-11-17 14:12:19,919 - __main__ - INFO - **************************************************
+2015-11-17 14:12:19,919 - __main__ - INFO - dest_tenant: trial-2
+2015-11-17 14:12:19,919 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:12:19,919 - __main__ - INFO - dest_grp: ptg_1_L2_1_L3_0_trial-2
+2015-11-17 14:12:19,919 - __main__ - INFO - src_grp: ptg_1_L2_1_L3_0_trial-2
+2015-11-17 14:12:19,920 - __main__ - INFO - src_eps: [u'4.201.0.17', u'4.201.0.28', u'4.201.0.20', u'4.201.0.22']
+2015-11-17 14:12:19,920 - __main__ - INFO - src_tenant: trial-2
+2015-11-17 14:12:19,920 - __main__ - INFO - dest_eps: [u'2.2.1.5', u'2.2.1.8', u'2.2.1.6', u'2.2.1.7']
+2015-11-17 14:12:19,920 - __main__ - INFO - 
+2015-11-17 14:12:19,921 - __main__ - INFO - **************************************************
+2015-11-17 14:12:19,921 - __main__ - INFO - dest_tenant: trial-2
+2015-11-17 14:12:19,921 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:12:19,921 - __main__ - INFO - dest_grp: ptg_2_L2_2_L3_0_trial-2
+2015-11-17 14:12:19,921 - __main__ - INFO - src_grp: ptg_2_L2_2_L3_0_trial-2
+2015-11-17 14:12:19,921 - __main__ - INFO - src_eps: [u'4.201.0.19', u'4.201.0.26', u'4.201.0.18']
+2015-11-17 14:12:19,921 - __main__ - INFO - src_tenant: trial-2
+2015-11-17 14:12:19,921 - __main__ - INFO - dest_eps: [u'2.2.0.6', u'2.2.0.7', u'2.2.0.5']
+2015-11-17 14:12:19,922 - __main__ - INFO - 
+2015-11-17 14:12:19,922 - __main__ - INFO - **************************************************
+2015-11-17 14:12:19,922 - __main__ - INFO - dest_tenant: trial-2
+2015-11-17 14:12:19,922 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:12:19,922 - __main__ - INFO - dest_grp: ptg_0_L2_0_L3_0_trial-2
+2015-11-17 14:12:19,922 - __main__ - INFO - src_grp: ptg_0_L2_0_L3_0_trial-2
+2015-11-17 14:12:19,922 - __main__ - INFO - src_eps: [u'4.201.0.29', u'4.201.0.24', u'4.201.0.23', u'4.201.0.21']
+2015-11-17 14:12:19,923 - __main__ - INFO - src_tenant: trial-2
+2015-11-17 14:12:19,923 - __main__ - INFO - dest_eps: [u'2.2.2.8', u'2.2.2.7', u'2.2.2.6', u'2.2.2.5']
+2015-11-17 14:12:19,923 - __main__ - INFO - 
+2015-11-17 14:12:19,990 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:19,993 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:19,997 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:20,148 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:20,170 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:20,174 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:20,183 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:20,207 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:20,207 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:20,288 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:20,322 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:20,323 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:20,502 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:20,509 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:20,538 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:20,543 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:20,545 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:20,577 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:20,950 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:20,959 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:20,965 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:21,146 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:21,151 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:21,153 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:21,172 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:21,174 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:21,181 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:21,290 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:21,290 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:21,300 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:21,516 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:21,517 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:21,530 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:21,551 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:21,554 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:21,564 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:22,202 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:22,203 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:22,205 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:22,212 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:22,397 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:22,403 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:22,408 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:22,412 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:22,428 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:22,430 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:22,431 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:22,440 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:22,568 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:22,577 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:22,584 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:22,608 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:22,771 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:22,772 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:22,806 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:22,806 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:22,815 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:22,815 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:22,852 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:22,852 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:23,291 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:23,291 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:23,294 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:23,302 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:23,512 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:23,517 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:23,517 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:23,517 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:23,548 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:23,548 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:23,549 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:23,551 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:23,655 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:23,660 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:23,693 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:23,719 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:23,882 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:23,886 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:23,901 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:23,914 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:23,916 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:23,923 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:23,950 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:23,954 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:24,671 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:24,673 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:24,681 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:24,869 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:24,871 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:24,874 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:24,897 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:24,898 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:24,899 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:25,012 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:25,012 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:25,015 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:25,219 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:25,223 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:25,233 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:25,255 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:25,259 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:25,268 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:25,642 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:25,644 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:25,647 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:25,832 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:25,835 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:25,840 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:25,857 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:25,867 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:25,869 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:25,974 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:25,979 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:25,991 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:26,177 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:26,182 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:26,186 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:26,214 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:26,219 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:26,224 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:26,863 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:26,863 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:26,872 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:26,873 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:27,031 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:27,050 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:27,060 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:27,071 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:27,074 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:27,076 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:27,091 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:27,101 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:27,168 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:27,217 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:27,244 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:27,250 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:27,378 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:27,397 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:27,412 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:27,416 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:27,496 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:27,501 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:27,549 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:27,555 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:28,007 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:28,011 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:28,028 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:28,029 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:28,205 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:28,205 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:28,224 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:28,227 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:28,231 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:28,232 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:28,248 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:28,249 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:28,378 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:28,381 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:28,384 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:28,385 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:12:28,585 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:28,593 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:28,612 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:28,616 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:12:28,616 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:28,617 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:28,643 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:28,649 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:12:59,755 - __main__ - INFO - Start the program
+2015-11-17 14:12:59,755 - __main__ - INFO - Initialize OSUtils
+2015-11-17 14:12:59,755 - __main__ - INFO - 
+
+Get tenant details
+
+
+2015-11-17 14:12:59,755 - libs.os_get_env - INFO - Get tenant list from Keystone
+2015-11-17 14:12:59,794 - libs.os_get_env - INFO - [<Tenant {u'enabled': True, u'description': u'admin tenant', u'name': u'admin', u'id': u'0653a3f46957480d999d754e7ea3cadc'}>, <Tenant {u'enabled': True, u'description': u'default tenant', u'name': u'demo', u'id': u'32ba63ad652140339a6c4e388188f52b'}>, <Tenant {u'enabled': True, u'description': u'Tenant for the openstack services', u'name': u'services', u'id': u'ef6a9a352a52417caee6fe9ec3d76e81'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-1', u'id': u'0adcf03335e24f7482306fb06e463373'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-19', u'id': u'09bb25794ce44364a2f618d9fce5f57d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-2', u'id': u'198ad6db34df469592efaa604f4f23c6'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-20', u'id': u'982a8d1247c34e0b85a46b73eb73a639'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-21', u'id': u'db27a726aca9430bab38cf5789c5f411'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-22', u'id': u'18a91c17cc064a07996f5702f6480765'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-23', u'id': u'2dd4b7b615654cc9b0e42cccb1c7882f'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-24', u'id': u'3482ba21bcee4e0792cd41052e771b94'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-25', u'id': u'b884bfce35f046f3a2fe69a4349625f0'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-3', u'id': u'75910da7f5794c09aee3a1f6c44e190d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-39', u'id': u'9ef10e1823f84bb5bf9c2099681168f9'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-4', u'id': u'c44db4aad74d43e2a399107467cfcf44'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-40', u'id': u'0eb096b84a934dbca6e38393307f17bd'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-41', u'id': u'99cd113467fb423094cdb0785a71e950'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-42', u'id': u'6960af21d2774244b8c7bcd04038bf6a'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-43', u'id': u'214fb8e8e1c44ccf88bcb863121f33bc'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-44', u'id': u'0670fabfabc24a78978d747a2715329d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-45', u'id': u'e6acceb19ce24011a343bbc6deec8b54'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-5', u'id': u'03f60c6551af41779ba941d5f594b5ad'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-59', u'id': u'd7f187167f53451b9c8d87b09882ec52'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-60', u'id': u'edf5499ac0584889bfb9f4a547b92ee7'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-61', u'id': u'dc8daaec964448a989592e5b064ec9cf'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-62', u'id': u'e4d51f8b84024cc5a59274d36bf3a67d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-63', u'id': u'ed7831fec5b048b295c9d2ad8e8c12f3'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-64', u'id': u'e533832daa9a4eaf8e5e94b1970a22d6'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-65', u'id': u'4faa47eb65bb4c81bcb8ae057785714a'}>]
+2015-11-17 14:12:59,794 - __main__ - INFO - {u'198ad6db34df469592efaa604f4f23c6': u'trial-2'}
+2015-11-17 14:12:59,794 - __main__ - INFO - 
+
+Get policy-target-groups for all tenants
+
+
+2015-11-17 14:13:01,038 - __main__ - INFO - 
+
+Get policy-rule-sets for all tenants
+
+
+2015-11-17 14:13:03,549 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:13:03,549 - __main__ - INFO - {u'subnets': [u'9e9aefca-e565-484b-baeb-55dadcc8b2bb'], u'description': u'', u'consumed_policy_rule_sets': [u'4273d544-0f62-4c24-86c5-7b05278960fd', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'8acab450-433b-4cc7-8530-e3a638c7a715', u'tenant_id': u'198ad6db34df469592efaa604f4f23c6', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'4273d544-0f62-4c24-86c5-7b05278960fd', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'1f765e39-3f6b-432d-8966-0caab7aaa906', u'9187160f-5630-4f3f-922c-1d359d1e584f', u'e5128877-7cd2-41a4-b8e4-66c482293d59'], u'shared': False, u'l2_policy_id': u'34e0155b-2ccc-426c-8f5b-8f7d87ef3832', u'id': u'05232680-0a6e-4d23-b5f1-92b8ccd4f6c9', u'name': u'ptg_3_L2_3_L3_0_trial-2'}
+2015-11-17 14:13:03,915 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:13:03,916 - __main__ - INFO - {u'subnets': [u'c9276311-24bc-4918-930c-59b57a9a924e'], u'description': u'', u'consumed_policy_rule_sets': [u'4273d544-0f62-4c24-86c5-7b05278960fd', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'8acab450-433b-4cc7-8530-e3a638c7a715', u'tenant_id': u'198ad6db34df469592efaa604f4f23c6', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'4273d544-0f62-4c24-86c5-7b05278960fd', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'17858c21-74a3-494f-b8d4-638e5165b072', u'426efe9f-fe06-4766-b530-17026dfa79f8', u'6a831297-8e09-47dc-b76a-37d7f7973e34', u'74c56a0c-e647-4f0b-9c55-6db82d463e10'], u'shared': False, u'l2_policy_id': u'f43bcd9e-3da5-4c61-9476-b1ba5af92411', u'id': u'258d018a-1af6-4554-9827-4169f6e075c6', u'name': u'ptg_1_L2_1_L3_0_trial-2'}
+2015-11-17 14:13:04,296 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:13:04,297 - __main__ - INFO - {u'subnets': [u'a4a2d211-8fa0-4e34-9780-063d5a76d260'], u'description': u'', u'consumed_policy_rule_sets': [u'4273d544-0f62-4c24-86c5-7b05278960fd', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'8acab450-433b-4cc7-8530-e3a638c7a715', u'tenant_id': u'198ad6db34df469592efaa604f4f23c6', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'4273d544-0f62-4c24-86c5-7b05278960fd', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'28236565-04fd-421b-8dfc-b7e0cfa4e6ad', u'f5d46f05-22f8-4d99-9474-43dba7ec854f', u'f5fe3be2-c8ff-40d2-99f7-8528ffe41ea9'], u'shared': False, u'l2_policy_id': u'4fc3346e-c996-46dc-acfb-08a23e429496', u'id': u'e3a9f889-8358-44ab-9205-5de6031e4ae2', u'name': u'ptg_2_L2_2_L3_0_trial-2'}
+2015-11-17 14:13:04,541 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:13:04,541 - __main__ - INFO - {u'subnets': [u'beacafd2-49be-46b5-99be-9d51930c7d44'], u'description': u'', u'consumed_policy_rule_sets': [u'4273d544-0f62-4c24-86c5-7b05278960fd', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'8acab450-433b-4cc7-8530-e3a638c7a715', u'tenant_id': u'198ad6db34df469592efaa604f4f23c6', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'4273d544-0f62-4c24-86c5-7b05278960fd', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'17810ee7-41cf-4c28-9321-dcbc0026d7ba', u'65b840f5-7bc2-42dc-9b89-15d555e4cbf0', u'b5da1716-4fff-4f66-80f6-1ebb35116d56', u'f38f36dd-1f5e-4f07-bed8-238d8378da1e'], u'shared': False, u'l2_policy_id': u'395bb15b-0572-4ffc-a255-600706678f06', u'id': u'fd3000e2-3391-4dd4-98ed-99fbe70783ca', u'name': u'ptg_0_L2_0_L3_0_trial-2'}
+2015-11-17 14:13:04,769 - __main__ - INFO - **************************************************
+2015-11-17 14:13:04,769 - __main__ - INFO - dest_tenant: trial-2
+2015-11-17 14:13:04,770 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:13:04,770 - __main__ - INFO - dest_grp: ptg_3_L2_3_L3_0_trial-2
+2015-11-17 14:13:04,770 - __main__ - INFO - src_grp: ptg_3_L2_3_L3_0_trial-2
+2015-11-17 14:13:04,770 - __main__ - INFO - src_eps: [u'4.201.0.27', u'4.201.0.16', u'4.201.0.25']
+2015-11-17 14:13:04,770 - __main__ - INFO - src_tenant: trial-2
+2015-11-17 14:13:04,770 - __main__ - INFO - dest_eps: [u'2.2.3.7', u'2.2.3.4', u'2.2.3.6']
+2015-11-17 14:13:04,771 - __main__ - INFO - 
+2015-11-17 14:13:04,771 - __main__ - INFO - **************************************************
+2015-11-17 14:13:04,771 - __main__ - INFO - dest_tenant: trial-2
+2015-11-17 14:13:04,771 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:13:04,771 - __main__ - INFO - dest_grp: ptg_1_L2_1_L3_0_trial-2
+2015-11-17 14:13:04,772 - __main__ - INFO - src_grp: ptg_1_L2_1_L3_0_trial-2
+2015-11-17 14:13:04,772 - __main__ - INFO - src_eps: [u'4.201.0.17', u'4.201.0.28', u'4.201.0.20', u'4.201.0.22']
+2015-11-17 14:13:04,772 - __main__ - INFO - src_tenant: trial-2
+2015-11-17 14:13:04,772 - __main__ - INFO - dest_eps: [u'2.2.1.5', u'2.2.1.8', u'2.2.1.6', u'2.2.1.7']
+2015-11-17 14:13:04,773 - __main__ - INFO - 
+2015-11-17 14:13:04,773 - __main__ - INFO - **************************************************
+2015-11-17 14:13:04,773 - __main__ - INFO - dest_tenant: trial-2
+2015-11-17 14:13:04,773 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:13:04,773 - __main__ - INFO - dest_grp: ptg_2_L2_2_L3_0_trial-2
+2015-11-17 14:13:04,773 - __main__ - INFO - src_grp: ptg_2_L2_2_L3_0_trial-2
+2015-11-17 14:13:04,773 - __main__ - INFO - src_eps: [u'4.201.0.19', u'4.201.0.26', u'4.201.0.18']
+2015-11-17 14:13:04,773 - __main__ - INFO - src_tenant: trial-2
+2015-11-17 14:13:04,774 - __main__ - INFO - dest_eps: [u'2.2.0.6', u'2.2.0.7', u'2.2.0.5']
+2015-11-17 14:13:04,774 - __main__ - INFO - 
+2015-11-17 14:13:04,774 - __main__ - INFO - **************************************************
+2015-11-17 14:13:04,774 - __main__ - INFO - dest_tenant: trial-2
+2015-11-17 14:13:04,774 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:13:04,774 - __main__ - INFO - dest_grp: ptg_0_L2_0_L3_0_trial-2
+2015-11-17 14:13:04,774 - __main__ - INFO - src_grp: ptg_0_L2_0_L3_0_trial-2
+2015-11-17 14:13:04,775 - __main__ - INFO - src_eps: [u'4.201.0.29', u'4.201.0.24', u'4.201.0.23', u'4.201.0.21']
+2015-11-17 14:13:04,775 - __main__ - INFO - src_tenant: trial-2
+2015-11-17 14:13:04,775 - __main__ - INFO - dest_eps: [u'2.2.2.8', u'2.2.2.7', u'2.2.2.6', u'2.2.2.5']
+2015-11-17 14:13:04,775 - __main__ - INFO - 
+2015-11-17 14:13:04,850 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:04,851 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:04,854 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:05,035 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:05,045 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:05,053 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:05,058 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:05,075 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:05,075 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:05,146 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:05,187 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:05,195 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:05,365 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:05,374 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:05,400 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:05,408 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:05,412 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:05,437 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:05,891 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:13:05,900 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:13:05,915 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:13:05,923 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:13:05,964 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:13:05,992 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:13:06,195 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:06,196 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:06,198 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:06,205 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:06,378 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:06,390 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:06,397 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:06,401 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:06,408 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:06,419 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:06,420 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:06,425 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:06,551 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:06,567 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:06,568 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:06,587 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:06,781 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:06,791 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:06,798 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:06,803 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:06,803 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:06,832 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:06,833 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:06,844 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:07,308 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:13:07,308 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:13:07,308 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:13:07,333 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:13:07,333 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:13:07,337 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:13:07,344 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:13:07,367 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:13:07,541 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:07,546 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:07,547 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:07,730 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:07,736 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:07,742 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:07,759 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:07,761 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:07,765 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:07,863 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:07,873 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:07,920 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:08,060 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:08,071 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:08,082 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:08,105 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:08,137 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:08,190 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:08,543 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:13:08,566 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:13:08,584 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:13:08,611 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:13:08,702 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:13:08,728 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:13:08,931 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:08,933 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:08,933 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:08,937 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:09,155 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:09,156 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:09,156 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:09,160 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:09,184 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:09,187 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:09,193 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:09,193 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:09,299 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:09,307 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:09,334 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:09,336 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:09,536 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:09,539 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:09,562 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:09,565 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:09,566 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:09,566 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:09,589 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:09,593 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:10,051 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:13:10,057 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:13:10,074 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:13:10,078 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:13:10,079 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:13:10,085 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:13:10,098 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:13:10,109 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:13:11,036 - __main__ - INFO - Start the program
+2015-11-17 14:13:11,036 - __main__ - INFO - Initialize OSUtils
+2015-11-17 14:13:11,036 - __main__ - INFO - 
+
+Get tenant details
+
+
+2015-11-17 14:13:11,036 - libs.os_get_env - INFO - Get tenant list from Keystone
+2015-11-17 14:13:11,098 - libs.os_get_env - INFO - [<Tenant {u'enabled': True, u'description': u'admin tenant', u'name': u'admin', u'id': u'0653a3f46957480d999d754e7ea3cadc'}>, <Tenant {u'enabled': True, u'description': u'default tenant', u'name': u'demo', u'id': u'32ba63ad652140339a6c4e388188f52b'}>, <Tenant {u'enabled': True, u'description': u'Tenant for the openstack services', u'name': u'services', u'id': u'ef6a9a352a52417caee6fe9ec3d76e81'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-1', u'id': u'0adcf03335e24f7482306fb06e463373'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-19', u'id': u'09bb25794ce44364a2f618d9fce5f57d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-2', u'id': u'198ad6db34df469592efaa604f4f23c6'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-20', u'id': u'982a8d1247c34e0b85a46b73eb73a639'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-21', u'id': u'db27a726aca9430bab38cf5789c5f411'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-22', u'id': u'18a91c17cc064a07996f5702f6480765'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-23', u'id': u'2dd4b7b615654cc9b0e42cccb1c7882f'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-24', u'id': u'3482ba21bcee4e0792cd41052e771b94'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-25', u'id': u'b884bfce35f046f3a2fe69a4349625f0'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-3', u'id': u'75910da7f5794c09aee3a1f6c44e190d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-39', u'id': u'9ef10e1823f84bb5bf9c2099681168f9'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-4', u'id': u'c44db4aad74d43e2a399107467cfcf44'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-40', u'id': u'0eb096b84a934dbca6e38393307f17bd'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-41', u'id': u'99cd113467fb423094cdb0785a71e950'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-42', u'id': u'6960af21d2774244b8c7bcd04038bf6a'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-43', u'id': u'214fb8e8e1c44ccf88bcb863121f33bc'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-44', u'id': u'0670fabfabc24a78978d747a2715329d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-45', u'id': u'e6acceb19ce24011a343bbc6deec8b54'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-5', u'id': u'03f60c6551af41779ba941d5f594b5ad'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-59', u'id': u'd7f187167f53451b9c8d87b09882ec52'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-60', u'id': u'edf5499ac0584889bfb9f4a547b92ee7'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-61', u'id': u'dc8daaec964448a989592e5b064ec9cf'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-62', u'id': u'e4d51f8b84024cc5a59274d36bf3a67d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-63', u'id': u'ed7831fec5b048b295c9d2ad8e8c12f3'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-64', u'id': u'e533832daa9a4eaf8e5e94b1970a22d6'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-65', u'id': u'4faa47eb65bb4c81bcb8ae057785714a'}>]
+2015-11-17 14:13:11,099 - __main__ - INFO - {u'198ad6db34df469592efaa604f4f23c6': u'trial-2'}
+2015-11-17 14:13:11,099 - __main__ - INFO - 
+
+Get policy-target-groups for all tenants
+
+
+2015-11-17 14:13:12,689 - __main__ - INFO - 
+
+Get policy-rule-sets for all tenants
+
+
+2015-11-17 14:13:14,685 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:13:14,685 - __main__ - INFO - {u'subnets': [u'9e9aefca-e565-484b-baeb-55dadcc8b2bb'], u'description': u'', u'consumed_policy_rule_sets': [u'4273d544-0f62-4c24-86c5-7b05278960fd', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'8acab450-433b-4cc7-8530-e3a638c7a715', u'tenant_id': u'198ad6db34df469592efaa604f4f23c6', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'4273d544-0f62-4c24-86c5-7b05278960fd', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'1f765e39-3f6b-432d-8966-0caab7aaa906', u'9187160f-5630-4f3f-922c-1d359d1e584f', u'e5128877-7cd2-41a4-b8e4-66c482293d59'], u'shared': False, u'l2_policy_id': u'34e0155b-2ccc-426c-8f5b-8f7d87ef3832', u'id': u'05232680-0a6e-4d23-b5f1-92b8ccd4f6c9', u'name': u'ptg_3_L2_3_L3_0_trial-2'}
+2015-11-17 14:13:14,917 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:13:14,917 - __main__ - INFO - {u'subnets': [u'c9276311-24bc-4918-930c-59b57a9a924e'], u'description': u'', u'consumed_policy_rule_sets': [u'4273d544-0f62-4c24-86c5-7b05278960fd', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'8acab450-433b-4cc7-8530-e3a638c7a715', u'tenant_id': u'198ad6db34df469592efaa604f4f23c6', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'4273d544-0f62-4c24-86c5-7b05278960fd', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'17858c21-74a3-494f-b8d4-638e5165b072', u'426efe9f-fe06-4766-b530-17026dfa79f8', u'6a831297-8e09-47dc-b76a-37d7f7973e34', u'74c56a0c-e647-4f0b-9c55-6db82d463e10'], u'shared': False, u'l2_policy_id': u'f43bcd9e-3da5-4c61-9476-b1ba5af92411', u'id': u'258d018a-1af6-4554-9827-4169f6e075c6', u'name': u'ptg_1_L2_1_L3_0_trial-2'}
+2015-11-17 14:13:15,274 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:13:15,274 - __main__ - INFO - {u'subnets': [u'a4a2d211-8fa0-4e34-9780-063d5a76d260'], u'description': u'', u'consumed_policy_rule_sets': [u'4273d544-0f62-4c24-86c5-7b05278960fd', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'8acab450-433b-4cc7-8530-e3a638c7a715', u'tenant_id': u'198ad6db34df469592efaa604f4f23c6', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'4273d544-0f62-4c24-86c5-7b05278960fd', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'28236565-04fd-421b-8dfc-b7e0cfa4e6ad', u'f5d46f05-22f8-4d99-9474-43dba7ec854f', u'f5fe3be2-c8ff-40d2-99f7-8528ffe41ea9'], u'shared': False, u'l2_policy_id': u'4fc3346e-c996-46dc-acfb-08a23e429496', u'id': u'e3a9f889-8358-44ab-9205-5de6031e4ae2', u'name': u'ptg_2_L2_2_L3_0_trial-2'}
+2015-11-17 14:13:15,421 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:13:15,421 - __main__ - INFO - {u'subnets': [u'beacafd2-49be-46b5-99be-9d51930c7d44'], u'description': u'', u'consumed_policy_rule_sets': [u'4273d544-0f62-4c24-86c5-7b05278960fd', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'8acab450-433b-4cc7-8530-e3a638c7a715', u'tenant_id': u'198ad6db34df469592efaa604f4f23c6', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'4273d544-0f62-4c24-86c5-7b05278960fd', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'17810ee7-41cf-4c28-9321-dcbc0026d7ba', u'65b840f5-7bc2-42dc-9b89-15d555e4cbf0', u'b5da1716-4fff-4f66-80f6-1ebb35116d56', u'f38f36dd-1f5e-4f07-bed8-238d8378da1e'], u'shared': False, u'l2_policy_id': u'395bb15b-0572-4ffc-a255-600706678f06', u'id': u'fd3000e2-3391-4dd4-98ed-99fbe70783ca', u'name': u'ptg_0_L2_0_L3_0_trial-2'}
+2015-11-17 14:13:15,684 - __main__ - INFO - **************************************************
+2015-11-17 14:13:15,684 - __main__ - INFO - dest_tenant: trial-2
+2015-11-17 14:13:15,685 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:13:15,685 - __main__ - INFO - dest_grp: ptg_3_L2_3_L3_0_trial-2
+2015-11-17 14:13:15,685 - __main__ - INFO - src_grp: ptg_3_L2_3_L3_0_trial-2
+2015-11-17 14:13:15,685 - __main__ - INFO - src_eps: [u'4.201.0.27', u'4.201.0.16', u'4.201.0.25']
+2015-11-17 14:13:15,686 - __main__ - INFO - src_tenant: trial-2
+2015-11-17 14:13:15,686 - __main__ - INFO - dest_eps: [u'2.2.3.7', u'2.2.3.4', u'2.2.3.6']
+2015-11-17 14:13:15,686 - __main__ - INFO - 
+2015-11-17 14:13:15,686 - __main__ - INFO - **************************************************
+2015-11-17 14:13:15,686 - __main__ - INFO - dest_tenant: trial-2
+2015-11-17 14:13:15,687 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:13:15,687 - __main__ - INFO - dest_grp: ptg_1_L2_1_L3_0_trial-2
+2015-11-17 14:13:15,687 - __main__ - INFO - src_grp: ptg_1_L2_1_L3_0_trial-2
+2015-11-17 14:13:15,687 - __main__ - INFO - src_eps: [u'4.201.0.17', u'4.201.0.28', u'4.201.0.20', u'4.201.0.22']
+2015-11-17 14:13:15,687 - __main__ - INFO - src_tenant: trial-2
+2015-11-17 14:13:15,687 - __main__ - INFO - dest_eps: [u'2.2.1.5', u'2.2.1.8', u'2.2.1.6', u'2.2.1.7']
+2015-11-17 14:13:15,688 - __main__ - INFO - 
+2015-11-17 14:13:15,688 - __main__ - INFO - **************************************************
+2015-11-17 14:13:15,688 - __main__ - INFO - dest_tenant: trial-2
+2015-11-17 14:13:15,688 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:13:15,688 - __main__ - INFO - dest_grp: ptg_2_L2_2_L3_0_trial-2
+2015-11-17 14:13:15,688 - __main__ - INFO - src_grp: ptg_2_L2_2_L3_0_trial-2
+2015-11-17 14:13:15,688 - __main__ - INFO - src_eps: [u'4.201.0.19', u'4.201.0.26', u'4.201.0.18']
+2015-11-17 14:13:15,689 - __main__ - INFO - src_tenant: trial-2
+2015-11-17 14:13:15,689 - __main__ - INFO - dest_eps: [u'2.2.0.6', u'2.2.0.7', u'2.2.0.5']
+2015-11-17 14:13:15,689 - __main__ - INFO - 
+2015-11-17 14:13:15,689 - __main__ - INFO - **************************************************
+2015-11-17 14:13:15,689 - __main__ - INFO - dest_tenant: trial-2
+2015-11-17 14:13:15,689 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:13:15,689 - __main__ - INFO - dest_grp: ptg_0_L2_0_L3_0_trial-2
+2015-11-17 14:13:15,689 - __main__ - INFO - src_grp: ptg_0_L2_0_L3_0_trial-2
+2015-11-17 14:13:15,689 - __main__ - INFO - src_eps: [u'4.201.0.29', u'4.201.0.24', u'4.201.0.23', u'4.201.0.21']
+2015-11-17 14:13:15,690 - __main__ - INFO - src_tenant: trial-2
+2015-11-17 14:13:15,690 - __main__ - INFO - dest_eps: [u'2.2.2.8', u'2.2.2.7', u'2.2.2.6', u'2.2.2.5']
+2015-11-17 14:13:15,690 - __main__ - INFO - 
+2015-11-17 14:13:15,757 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:15,762 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:15,763 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:15,951 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:15,954 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:15,956 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:15,972 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:15,977 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:15,980 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:16,059 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:16,078 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:16,099 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:16,243 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:16,258 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:16,278 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:16,295 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:16,307 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:16,345 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:16,733 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:16,737 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:16,740 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:16,926 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:16,930 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:16,933 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:16,953 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:16,958 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:16,962 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:17,070 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:17,071 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:17,082 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:17,297 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:17,303 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:17,308 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:17,335 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:17,336 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:17,340 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:17,975 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:17,978 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:17,982 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:17,988 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:18,185 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:18,186 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:18,195 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:18,195 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:18,218 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:18,219 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:18,225 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:18,227 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:18,335 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:18,363 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:18,365 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:18,371 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:18,534 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:18,558 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:18,572 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:18,597 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:18,601 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:18,607 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:18,631 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:18,636 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:19,021 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:19,025 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:19,026 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:19,031 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:19,210 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:19,213 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:19,224 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:19,228 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:19,232 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:19,243 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:19,248 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:19,248 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:19,383 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:19,383 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:19,384 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:19,392 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:19,579 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:19,614 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:19,630 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:19,630 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:19,636 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:19,665 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:19,665 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:19,672 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:20,416 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:20,416 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:20,421 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:20,586 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:20,598 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:20,607 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:20,614 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:20,624 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:20,630 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:20,726 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:20,736 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:20,744 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:20,941 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:20,943 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:20,945 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:20,976 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:20,976 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:20,982 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:21,414 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:21,414 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:21,415 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:21,607 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:21,608 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:21,609 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:21,633 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:21,633 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:21,634 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:21,750 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:21,750 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:21,752 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:21,960 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:21,962 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:21,965 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:21,995 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:21,999 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:22,003 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:22,644 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:22,649 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:22,651 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:22,664 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:22,851 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:22,853 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:22,859 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:22,860 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:22,881 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:22,881 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:22,882 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:22,885 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:23,010 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:23,026 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:23,028 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:23,053 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:23,238 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:23,244 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:23,255 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:23,261 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:23,274 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:23,281 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:23,291 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:23,297 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:23,688 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:23,689 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:23,695 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:23,696 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:23,891 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:23,905 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:23,905 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:23,906 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:23,924 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:23,932 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:23,931 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:23,934 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:24,035 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:24,067 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:24,076 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:24,081 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:13:24,237 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:24,253 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:24,277 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:24,292 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:24,299 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:13:24,313 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:24,327 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:24,335 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:13:55,485 - __main__ - INFO - Start the program
+2015-11-17 14:13:55,485 - __main__ - INFO - Initialize OSUtils
+2015-11-17 14:13:55,485 - __main__ - INFO - 
+
+Get tenant details
+
+
+2015-11-17 14:13:55,485 - libs.os_get_env - INFO - Get tenant list from Keystone
+2015-11-17 14:13:55,531 - libs.os_get_env - INFO - [<Tenant {u'enabled': True, u'description': u'admin tenant', u'name': u'admin', u'id': u'0653a3f46957480d999d754e7ea3cadc'}>, <Tenant {u'enabled': True, u'description': u'default tenant', u'name': u'demo', u'id': u'32ba63ad652140339a6c4e388188f52b'}>, <Tenant {u'enabled': True, u'description': u'Tenant for the openstack services', u'name': u'services', u'id': u'ef6a9a352a52417caee6fe9ec3d76e81'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-1', u'id': u'0adcf03335e24f7482306fb06e463373'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-19', u'id': u'09bb25794ce44364a2f618d9fce5f57d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-2', u'id': u'198ad6db34df469592efaa604f4f23c6'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-20', u'id': u'982a8d1247c34e0b85a46b73eb73a639'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-21', u'id': u'db27a726aca9430bab38cf5789c5f411'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-22', u'id': u'18a91c17cc064a07996f5702f6480765'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-23', u'id': u'2dd4b7b615654cc9b0e42cccb1c7882f'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-24', u'id': u'3482ba21bcee4e0792cd41052e771b94'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-25', u'id': u'b884bfce35f046f3a2fe69a4349625f0'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-3', u'id': u'75910da7f5794c09aee3a1f6c44e190d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-39', u'id': u'9ef10e1823f84bb5bf9c2099681168f9'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-4', u'id': u'c44db4aad74d43e2a399107467cfcf44'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-40', u'id': u'0eb096b84a934dbca6e38393307f17bd'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-41', u'id': u'99cd113467fb423094cdb0785a71e950'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-42', u'id': u'6960af21d2774244b8c7bcd04038bf6a'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-43', u'id': u'214fb8e8e1c44ccf88bcb863121f33bc'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-44', u'id': u'0670fabfabc24a78978d747a2715329d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-45', u'id': u'e6acceb19ce24011a343bbc6deec8b54'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-5', u'id': u'03f60c6551af41779ba941d5f594b5ad'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-59', u'id': u'd7f187167f53451b9c8d87b09882ec52'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-60', u'id': u'edf5499ac0584889bfb9f4a547b92ee7'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-61', u'id': u'dc8daaec964448a989592e5b064ec9cf'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-62', u'id': u'e4d51f8b84024cc5a59274d36bf3a67d'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-63', u'id': u'ed7831fec5b048b295c9d2ad8e8c12f3'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-64', u'id': u'e533832daa9a4eaf8e5e94b1970a22d6'}>, <Tenant {u'enabled': True, u'description': None, u'name': u'trial-65', u'id': u'4faa47eb65bb4c81bcb8ae057785714a'}>]
+2015-11-17 14:13:55,532 - __main__ - INFO - {u'198ad6db34df469592efaa604f4f23c6': u'trial-2'}
+2015-11-17 14:13:55,532 - __main__ - INFO - 
+
+Get policy-target-groups for all tenants
+
+
+2015-11-17 14:13:57,072 - __main__ - INFO - 
+
+Get policy-rule-sets for all tenants
+
+
+2015-11-17 14:13:59,385 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:13:59,385 - __main__ - INFO - {u'subnets': [u'9e9aefca-e565-484b-baeb-55dadcc8b2bb'], u'description': u'', u'consumed_policy_rule_sets': [u'4273d544-0f62-4c24-86c5-7b05278960fd', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'8acab450-433b-4cc7-8530-e3a638c7a715', u'tenant_id': u'198ad6db34df469592efaa604f4f23c6', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'4273d544-0f62-4c24-86c5-7b05278960fd', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'1f765e39-3f6b-432d-8966-0caab7aaa906', u'9187160f-5630-4f3f-922c-1d359d1e584f', u'e5128877-7cd2-41a4-b8e4-66c482293d59'], u'shared': False, u'l2_policy_id': u'34e0155b-2ccc-426c-8f5b-8f7d87ef3832', u'id': u'05232680-0a6e-4d23-b5f1-92b8ccd4f6c9', u'name': u'ptg_3_L2_3_L3_0_trial-2'}
+2015-11-17 14:13:59,906 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:13:59,906 - __main__ - INFO - {u'subnets': [u'c9276311-24bc-4918-930c-59b57a9a924e'], u'description': u'', u'consumed_policy_rule_sets': [u'4273d544-0f62-4c24-86c5-7b05278960fd', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'8acab450-433b-4cc7-8530-e3a638c7a715', u'tenant_id': u'198ad6db34df469592efaa604f4f23c6', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'4273d544-0f62-4c24-86c5-7b05278960fd', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'17858c21-74a3-494f-b8d4-638e5165b072', u'426efe9f-fe06-4766-b530-17026dfa79f8', u'6a831297-8e09-47dc-b76a-37d7f7973e34', u'74c56a0c-e647-4f0b-9c55-6db82d463e10'], u'shared': False, u'l2_policy_id': u'f43bcd9e-3da5-4c61-9476-b1ba5af92411', u'id': u'258d018a-1af6-4554-9827-4169f6e075c6', u'name': u'ptg_1_L2_1_L3_0_trial-2'}
+2015-11-17 14:14:00,260 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:14:00,261 - __main__ - INFO - {u'subnets': [u'a4a2d211-8fa0-4e34-9780-063d5a76d260'], u'description': u'', u'consumed_policy_rule_sets': [u'4273d544-0f62-4c24-86c5-7b05278960fd', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'8acab450-433b-4cc7-8530-e3a638c7a715', u'tenant_id': u'198ad6db34df469592efaa604f4f23c6', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'4273d544-0f62-4c24-86c5-7b05278960fd', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'28236565-04fd-421b-8dfc-b7e0cfa4e6ad', u'f5d46f05-22f8-4d99-9474-43dba7ec854f', u'f5fe3be2-c8ff-40d2-99f7-8528ffe41ea9'], u'shared': False, u'l2_policy_id': u'4fc3346e-c996-46dc-acfb-08a23e429496', u'id': u'e3a9f889-8358-44ab-9205-5de6031e4ae2', u'name': u'ptg_2_L2_2_L3_0_trial-2'}
+2015-11-17 14:14:00,410 - __main__ - INFO - Policy target by Policy target group
+2015-11-17 14:14:00,410 - __main__ - INFO - {u'subnets': [u'beacafd2-49be-46b5-99be-9d51930c7d44'], u'description': u'', u'consumed_policy_rule_sets': [u'4273d544-0f62-4c24-86c5-7b05278960fd', u'bf70804d-5e9e-4d19-b470-b074fff1461b', u'c404f2b9-696b-4e50-ac5a-e1835b28ce7a'], u'network_service_policy_id': u'8acab450-433b-4cc7-8530-e3a638c7a715', u'tenant_id': u'198ad6db34df469592efaa604f4f23c6', u'service_management': False, u'provided_policy_rule_sets': [u'1acf0a33-cb03-465d-b7da-574d03a75dfb', u'4273d544-0f62-4c24-86c5-7b05278960fd', u'd5118c50-1d3c-49c0-ac8b-d5c1280a98d0'], u'policy_targets': [u'17810ee7-41cf-4c28-9321-dcbc0026d7ba', u'65b840f5-7bc2-42dc-9b89-15d555e4cbf0', u'b5da1716-4fff-4f66-80f6-1ebb35116d56', u'f38f36dd-1f5e-4f07-bed8-238d8378da1e'], u'shared': False, u'l2_policy_id': u'395bb15b-0572-4ffc-a255-600706678f06', u'id': u'fd3000e2-3391-4dd4-98ed-99fbe70783ca', u'name': u'ptg_0_L2_0_L3_0_trial-2'}
+2015-11-17 14:14:00,603 - __main__ - INFO - **************************************************
+2015-11-17 14:14:00,603 - __main__ - INFO - dest_tenant: trial-2
+2015-11-17 14:14:00,603 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:14:00,604 - __main__ - INFO - dest_grp: ptg_3_L2_3_L3_0_trial-2
+2015-11-17 14:14:00,604 - __main__ - INFO - src_grp: ptg_3_L2_3_L3_0_trial-2
+2015-11-17 14:14:00,604 - __main__ - INFO - src_eps: [u'4.201.0.27', u'4.201.0.16', u'4.201.0.25']
+2015-11-17 14:14:00,604 - __main__ - INFO - src_tenant: trial-2
+2015-11-17 14:14:00,605 - __main__ - INFO - dest_eps: [u'2.2.3.7', u'2.2.3.4', u'2.2.3.6']
+2015-11-17 14:14:00,605 - __main__ - INFO - 
+2015-11-17 14:14:00,605 - __main__ - INFO - **************************************************
+2015-11-17 14:14:00,605 - __main__ - INFO - dest_tenant: trial-2
+2015-11-17 14:14:00,605 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:14:00,606 - __main__ - INFO - dest_grp: ptg_1_L2_1_L3_0_trial-2
+2015-11-17 14:14:00,606 - __main__ - INFO - src_grp: ptg_1_L2_1_L3_0_trial-2
+2015-11-17 14:14:00,606 - __main__ - INFO - src_eps: [u'4.201.0.17', u'4.201.0.28', u'4.201.0.20', u'4.201.0.22']
+2015-11-17 14:14:00,606 - __main__ - INFO - src_tenant: trial-2
+2015-11-17 14:14:00,606 - __main__ - INFO - dest_eps: [u'2.2.1.5', u'2.2.1.8', u'2.2.1.6', u'2.2.1.7']
+2015-11-17 14:14:00,607 - __main__ - INFO - 
+2015-11-17 14:14:00,607 - __main__ - INFO - **************************************************
+2015-11-17 14:14:00,607 - __main__ - INFO - dest_tenant: trial-2
+2015-11-17 14:14:00,607 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:14:00,607 - __main__ - INFO - dest_grp: ptg_2_L2_2_L3_0_trial-2
+2015-11-17 14:14:00,607 - __main__ - INFO - src_grp: ptg_2_L2_2_L3_0_trial-2
+2015-11-17 14:14:00,607 - __main__ - INFO - src_eps: [u'4.201.0.19', u'4.201.0.26', u'4.201.0.18']
+2015-11-17 14:14:00,607 - __main__ - INFO - src_tenant: trial-2
+2015-11-17 14:14:00,608 - __main__ - INFO - dest_eps: [u'2.2.0.6', u'2.2.0.7', u'2.2.0.5']
+2015-11-17 14:14:00,608 - __main__ - INFO - 
+2015-11-17 14:14:00,608 - __main__ - INFO - **************************************************
+2015-11-17 14:14:00,608 - __main__ - INFO - dest_tenant: trial-2
+2015-11-17 14:14:00,608 - __main__ - INFO - contract: [{'action': 'allow', 'direction': 'in', 'protocol': 'icmp', 'name': 'allow_icmp', 'port': 'None'}]
+2015-11-17 14:14:00,608 - __main__ - INFO - dest_grp: ptg_0_L2_0_L3_0_trial-2
+2015-11-17 14:14:00,608 - __main__ - INFO - src_grp: ptg_0_L2_0_L3_0_trial-2
+2015-11-17 14:14:00,609 - __main__ - INFO - src_eps: [u'4.201.0.29', u'4.201.0.24', u'4.201.0.23', u'4.201.0.21']
+2015-11-17 14:14:00,609 - __main__ - INFO - src_tenant: trial-2
+2015-11-17 14:14:00,609 - __main__ - INFO - dest_eps: [u'2.2.2.8', u'2.2.2.7', u'2.2.2.6', u'2.2.2.5']
+2015-11-17 14:14:00,609 - __main__ - INFO - 
+2015-11-17 14:14:00,682 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:00,685 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:00,687 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:00,854 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:00,865 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:00,873 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:00,885 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:00,886 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:00,891 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:00,996 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:01,006 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:01,024 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:01,230 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:01,231 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:01,233 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:01,264 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:01,269 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:01,269 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:01,746 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:14:01,747 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:14:01,772 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:14:01,772 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:14:01,796 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:14:01,820 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:14:01,986 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:01,989 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:01,989 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:01,991 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:02,214 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:02,215 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:02,215 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:02,216 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:02,249 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:02,249 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:02,253 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:02,255 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:02,381 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:02,389 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:02,404 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:02,422 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:02,619 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:02,621 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:02,632 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:02,633 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:02,656 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:02,656 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:02,667 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:02,667 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:03,128 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:14:03,141 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:14:03,147 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:14:03,152 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:14:03,164 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:14:03,171 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:14:03,176 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:14:03,199 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:14:03,384 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:03,391 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:03,399 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:03,551 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:03,558 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:03,569 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:03,582 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:03,584 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:03,607 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:03,688 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:03,754 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:03,764 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:03,897 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:03,934 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:03,936 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:03,943 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:03,973 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:03,980 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:04,467 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:14:04,488 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:14:04,491 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:14:04,497 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:14:04,511 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:14:04,521 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:14:04,700 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:04,702 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:04,707 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:04,711 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:04,909 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:04,910 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:04,916 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:04,916 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:04,946 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:04,946 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:04,947 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:04,948 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:05,062 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:05,071 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:05,088 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:05,092 - paramiko.transport - INFO - Connected (version 2.0, client OpenSSH_6.6.1p1)
+2015-11-17 14:14:05,282 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:05,287 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:05,299 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:05,303 - paramiko.transport - INFO - Authentication (publickey) failed.
+2015-11-17 14:14:05,309 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:05,322 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:05,330 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:05,336 - paramiko.transport - INFO - Authentication (password) successful!
+2015-11-17 14:14:05,802 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:14:05,816 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:14:05,826 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:14:05,838 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:14:05,845 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:14:05,846 - paramiko.transport.sftp - INFO - [chan 2] Opened sftp connection (server version 3)
+2015-11-17 14:14:05,861 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
+2015-11-17 14:14:05,868 - paramiko.transport.sftp - INFO - [chan 2] sftp session closed.
