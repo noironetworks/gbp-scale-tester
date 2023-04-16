@@ -36,7 +36,7 @@ python-neutronclient==2.6.0
 python-swiftclient==2.4.0
 pytz==2015.4
 PyYAML==3.11
-requests==2.7.0
+requests==2.20.0
 simplejson==3.7.3
 six==1.9.0
 stevedore==1.6.0
